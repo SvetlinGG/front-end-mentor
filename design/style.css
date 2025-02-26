@@ -19,11 +19,12 @@ section {
     flex-direction: column;
     padding: 10px;
     box-shadow: lightgrey;
+
 }
 img {
     width: 200px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 10px;
     
 }
 .text, .paragraph {
@@ -31,7 +32,7 @@ img {
 }
 .paragraph {
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 300;
 }
 .text {
     font-size: 10px;
