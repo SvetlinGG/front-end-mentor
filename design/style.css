@@ -1,0 +1,38 @@
+:root {
+    --background-color: hsl(212, 45%, 89%);
+    font-family: 'Inter';
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+section {
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    margin-left: 300px;
+    margin-top: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: lightgrey;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    
+}
+.text, .paragraph {
+    text-align: center;
+}
+.paragraph {
+    font-size: 12px;
+    font-weight: 200;
+}
+.text {
+    font-size: 10px;
+}
