@@ -18,6 +18,8 @@
 }
 body{
     margin: 0;
+    padding: 80px 300px;
+    background-color: var(--cream);
 }
 
 .attribution { 
@@ -29,4 +31,21 @@ body{
 }
 h1 {
     font-family:var(--font-family-two);
+    font-weight: 700;
+    color: var(--green-700);
+}
+.container {
+    display: flex;
+    
+    
+}
+.txt {
+    padding: 30px;
+}
+img {
+    width: 400px;
+    height: 500px;
+}
+.money {
+    color: var(--green-500);
 }
