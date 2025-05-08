@@ -41,11 +41,56 @@ h1 {
 }
 .txt {
     padding: 30px;
+    background-color: var(--white);
+    width: 290px;
+    height: 460px;
 }
 img {
-    width: 400px;
-    height: 500px;
+    width: 340px;
+    height: 520px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 .money {
     color: var(--green-500);
+}
+.perfume {
+    font-family: var(--font-family-one);
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.price {
+    display: flex;
+    align-items: center;
+
+}
+.old {
+    padding-left: 10px;
+    color: var(--grey);
+    text-decoration: line-through;
+    
+}
+.btn {
+    width: 280px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--green-500);
+    color: var(--white);
+    font-size: medium;
+    font-family: Arial;
+}
+svg {
+    padding-right: 15px;
+}
+.floral {
+    font-family: var(--font-family-one);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--grey);
+    line-height: 1.7;
+    font-size: 1rem;
 }
