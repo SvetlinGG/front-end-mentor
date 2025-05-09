@@ -20,9 +20,72 @@
 }
 
 body {
-    padding: 50px 100px;
+    padding: 50px 150px;
 }
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    border: solid 1px black;
+    height: 700px;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    
+}
+.create {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: solid 1px red;
+    
+}
+.write {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: solid 1px red;
+}
+.violet {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border: solid 1px blue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.manage {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: solid 1px red;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.percent {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: solid 1px red;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.maintain {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border: solid 1px red;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grow {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    border: solid 1px red;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.schedule {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border: solid 1px red;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
