@@ -7,4 +7,22 @@
 
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 7%);
+
+    --font-family: 'DM Sans';
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    padding: 50px 100px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
