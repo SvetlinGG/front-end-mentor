@@ -31,6 +31,7 @@ body {
     border: solid 1px black;
     height: 700px;
     margin-bottom: 10px;
+    background-color: rgb(248, 245, 245);
 }
 .first {
     display: flex;
@@ -80,13 +81,33 @@ h1 {
     font-size: 28px;
     font-family: 'Arial';
 }
-.manage {
+.man {
+    display: flex;
+    flex-direction: column;
     grid-column-start: 2;
     grid-column-end: 3;
-    border: solid 1px red;
+    border-radius: 15px;
     grid-row-start: 2;
     grid-row-end: 3;
+    background-color: var(--white);
+    padding: 20px;
 }
+h3 {
+    font-weight: 400;
+    margin: 0;
+}
+.manage {
+    font-family: var(--font-family);
+    font-size: larger;
+    font-size: 30px;
+    font-family: 'Arial';
+}
+.multiple {
+    width: 250px;
+    height: 60px;
+    
+}
+
 .percent {
     grid-column-start: 2;
     grid-column-end: 3;
