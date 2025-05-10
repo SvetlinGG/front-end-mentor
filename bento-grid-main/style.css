@@ -30,6 +30,7 @@ body {
     column-gap: 15px;
     border: solid 1px black;
     height: 700px;
+    margin-bottom: 10px;
 }
 .first {
     display: flex;
@@ -48,11 +49,36 @@ body {
     border: solid 1px red;
 }
 .violet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-column-start: 2;
     grid-column-end: 4;
-    border: solid 1px blue;
     grid-row-start: 1;
     grid-row-end: 2;
+    background-color: var(--purple-500);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 25px;
+}
+h1 {
+    margin: 0;
+    font-weight: 500;
+}
+.ten {
+    color: var(--yellow-500);
+}
+.fast {
+    font-style: italic;
+}
+.stars {
+    width: 150px;
+}
+.social {
+    font-family: var(--font-family);
+    font-size: larger;
+    font-size: 28px;
+    font-family: 'Arial';
 }
 .manage {
     grid-column-start: 2;
