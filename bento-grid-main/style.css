@@ -195,6 +195,8 @@ h4 {
     margin-left: 20px;
 }
 .schedule {
+    display: flex;
+    flex-direction: column;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 4;
@@ -204,7 +206,25 @@ h4 {
     grid-row-start: 1;
     grid-row-end: 3;
 }
+.media {
+    color: var(--black);
+    font-family: 'Arial';
+    font-size: 2em;
+    font-weight: 400;
+    margin-left: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
 .diagram {
-    height: 100px;
-    width: 100px;
+    height: 280px;
+    width: 230px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.optimize {
+    color: var(--black);
+    font-family: 'Arial';
+    padding-left: 20px;
+    margin-left: 20px;
 }
