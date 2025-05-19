@@ -14,3 +14,19 @@
     --Red-500: `hsl(3, 71%, 56%)`;
     --Red-700: `hsl(3, 77%, 44%)`;
 }
+body {
+    width: 1440px;
+
+}
+.logo {
+    
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
