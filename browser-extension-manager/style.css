@@ -1,25 +1,37 @@
 :root {
     /* Neutral */
-    --Neutral-900: `hsl(227, 75%, 14%)`;
-    --Neutral-800: `hsl(226, 25%, 17%)`;
-    --Neutral-700: `hsl(225, 23%, 24%)`;
-    --Neutral-600: `hsl(226, 11%, 37%)`;
-    --Neutral-300: `hsl(0, 0%, 78%)`;
-    --Neutral-200: `hsl(217, 61%, 90%)`;
-    --Neutral-100: `hsl(0, 0%, 93%)`;
-    --Neutral-0: `hsl(200, 60%, 99%)`;
+    --Neutral-900: hsl(227, 75%, 14%);
+    --Neutral-800: hsl(226, 25%, 17%);
+    --Neutral-700: hsl(225, 23%, 24%);
+    --Neutral-600: hsl(226, 11%, 37%);
+    --Neutral-300: hsl(0, 0%, 78%);
+    --Neutral-200: hsl(217, 61%, 90%);
+    --Neutral-100: hsl(0, 0%, 93%);
+    --Neutral-0: hsl(200, 60%, 99%);
 
     /*  Red */
-    --Red-400: `hsl(3, 86%, 64%)`;
-    --Red-500: `hsl(3, 71%, 56%)`;
-    --Red-700: `hsl(3, 77%, 44%)`;
+    --Red-400: hsl(3, 86%, 64%);
+    --Red-500: hsl(3, 71%, 56%);
+    --Red-700: hsl(3, 77%, 44%);
 }
 body {
     width: 1440px;
 
 }
 .logo {
-    
+    background-color: var(--Neutral-600);
+    border-radius: 10px;
+}
+.moon {
+    width: 40px;
+    height: 40px;
+    /* background-color: var(--Neutral-300); */
+    background-color: var(--Neutral-900);
+    border-radius: 8px;
+    color: var(--Neutral-0);
+}
+input {
+    color: var(--Neutral-0);
 }
 
 .attribution { 
