@@ -18,19 +18,28 @@ body {
     width: 1440px;
 
 }
+
 .logo {
-    background-color: var(--Neutral-600);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Neutral-700);
     border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
 }
-.moon {
+button {
     width: 40px;
     height: 40px;
-    /* background-color: var(--Neutral-300); */
-    background-color: var(--Neutral-900);
     border-radius: 8px;
-    color: var(--Neutral-0);
+    background-color: var(--Neutral-600);
+    border-style: none;
 }
-input {
+
+.extension {
+    width: 180px;
+    height: 60px;
     color: var(--Neutral-0);
 }
 
