@@ -64,21 +64,22 @@ button {
 .navigation {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 15px;
     color: var(--Neutral-0);
     font-weight: 100;
     
 }
 .btn-1 {
-    border: solid 1px  red;
-    width: 60px;
-    height: 40px;
-    
-
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: var(--Neutral-600);
+    color: var(--Neutral-0);
 }
 .btn {
-    
-    
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: var(--Neutral-600);
+    color: var(--Neutral-0);
 }
 
 .attribution { 
