@@ -64,16 +64,20 @@ button {
 .navigation {
     display: flex;
     align-items: center;
+    gap: 80px;
     color: var(--Neutral-0);
     font-weight: 100;
-    border: solid 1px  red;
+    
 }
 .btn-1 {
+    border: solid 1px  red;
+    width: 60px;
+    height: 40px;
+    
 
 }
 .btn {
-    width: 30px;
-    height: 20px;
+    
     
 }
 
