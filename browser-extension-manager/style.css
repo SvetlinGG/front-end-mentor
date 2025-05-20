@@ -1,3 +1,5 @@
+@import url(https://fonts.google.com/noto/specimen/Noto+Sans);
+
 :root {
     /* Neutral */
     --Neutral-900: hsl(227, 75%, 14%);
@@ -41,6 +43,38 @@ button {
     width: 180px;
     height: 60px;
     color: var(--Neutral-0);
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Neutral-800);
+    font-family: "Work Sans", sans-serif;
+    height: 50px;
+    margin-top: 30px;
+    padding: 0px 20px;
+}
+.list {
+    color: var(--Neutral-0);
+    font-weight: 900;
+    font-size: 25px;
+    
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    color: var(--Neutral-0);
+    font-weight: 100;
+    border: solid 1px  red;
+}
+.btn-1 {
+
+}
+.btn {
+    width: 30px;
+    height: 20px;
+    
 }
 
 .attribution { 
