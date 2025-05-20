@@ -89,4 +89,11 @@ button {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+.list-section {
+    display: grid;
+    border: solid 1px red;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
 
