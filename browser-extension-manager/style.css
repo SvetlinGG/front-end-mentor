@@ -96,4 +96,15 @@ button {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
+.dev {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: solid 1px red;
+    padding: 18px;
+    border-radius: 25px;
+    
+    
+}
 
