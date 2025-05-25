@@ -26,9 +26,14 @@
     </header>
 
     <div class="filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="active">Active</button>
-      <button class="filter-btn" data-filter="inactive">Inactive</button>
+      <input type="radio" id="filter-all" name="filter" value="all" checked>
+      <label for="filter-all" class="filter-btn">All</label>
+      
+      <input type="radio" id="filter-active" name="filter" value="active">
+      <label for="filter-active" class="filter-btn">Active</label>
+      
+      <input type="radio" id="filter-inactive" name="filter" value="inactive">
+      <label for="filter-inactive" class="filter-btn">Inactive</label>
     </div>
 
     <div class="extensions-grid" id="extensionsGrid">
