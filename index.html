@@ -3,25 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/design/style.css">
-    <title>QR Code</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Bebas+Neue&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <header>
+        <h1>FOOD MENU</h1>
+    </header>
 
-    <section class="components">
-        <div class="image">
-            <img src="/images/image-qr-code.png" alt="">
-        </div>
-        <div class="text">
-            <h1 class="lead-text">Improve your front-end skills by building projects</h1>
-        </div>
-        <div class="paragraph">
-            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-        </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Foods</a>
+        <a href="#">Contacts</a>
+    </nav>
+
+    <section class="search-section">
+        <input type="text" placeholder="Search for Food">
+        <button>Search</button>
     </section>
-    
+
+    <h2>Explore Our Foods</h2>
+    <div class="featured">
+        <div>
+            <img src="/img/food_1.jpg" alt="Green Leafy Dish">
+            <h3>Green Leafy Dish</h3>
+        </div>
+        <div>
+            <img src="/img/food_2.jpg" alt="Fish Salad Dish">
+            <h3>Fish Salad Dish</h3>
+        </div>
+        <div>
+            <img src="/img/food_3.jpg" alt="Classic Burger">
+            <h3>Classic Burger</h3>
+        </div>
+    </div>
+
+    <section class="menu-list">
+        <div class="menu-item">
+            <img src="/img/food_1.jpg" alt="Green Leafy">
+            <div>
+                <h4>Green Leafy Dish</h4>
+                <strong>12.54 $</strong>
+                <p>Enjoy a fresh and vibrant Green Leafy dish featuring crisp avocado, mixed green leaf salads, and tender calamari.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/img/food_2.jpg" alt="Fish Salad">
+            <div>
+                <h4>Fish Salad Dish</h4>
+                <strong>18.22 $</strong>
+                <p>Savor a delicious Fish Salad featuring tender salmon, creamy avocado, crisp Romaine lettuce, and juicy cherry tomatoes. Lightly dressed, this dish offers a perfect balance of freshness and rich flavors.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/img/food_3.jpg" alt="Burger">
+            <div>
+                <h4>Classic Burger</h4>
+                <strong>7.50 $</strong>
+                <p>Enjoy a classic burger with a juicy beef patty, fresh lettuce, ripe tomatoes, and melted cheese, all served in a soft toasted bun.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <!-- Duplicate Items as per content -->
+    </section>
+
+    <div class="footer">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <p>&copy; All rights reserved | <a href="https://softuni.org" target="_blank">SoftUni</a></p>
+    </div>
 </body>
 </html>
+
