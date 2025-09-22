@@ -26,15 +26,34 @@ body {
     grid-template-rows: 25em 25em 25em;
     grid: 20px;
 }
-.sweets {
+.card {
+    display: flex;
     width: 25em;
     height: 35em;
+    
 }
-img {
+.sweets-1 {
     width: 25em;
     height: 25em;
+    background-image: url('/assets/images/image-waffle-desktop.jpg');
     border-radius: 15px;
+    
 }
+.sweets-2 {
+    width: 25em;
+    height: 25em;
+    background-image: url('/assets/images/image-creme-brulee-desktop.jpg');
+    border-radius: 15px;
+    
+}
+.sweets-3 {
+    width: 25em;
+    height: 25em;
+    background-image: url('/assets/images/image-macaron-desktop.jpg');
+    border-radius: 15px;
+    
+}
+
 .add {
     width: 20px;
     height: 20px;
@@ -45,12 +64,15 @@ img {
 .btn-add {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 15em;
     height: 3em;
     border-radius: 20px;
     background-color: var(--Rose-50);
     font-weight: bolder;
 }
-.sweets > button {
-    margin-right: 20px;
+button {
+    margin-left: 25%;
+    margin-top: 95%;
 }
+
