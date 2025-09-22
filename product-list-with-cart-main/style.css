@@ -35,3 +35,22 @@ img {
     height: 25em;
     border-radius: 15px;
 }
+.add {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-add {
+    display: flex;
+    align-items: center;
+    width: 15em;
+    height: 3em;
+    border-radius: 20px;
+    background-color: var(--Rose-50);
+    font-weight: bolder;
+}
+.sweets > button {
+    margin-right: 20px;
+}
