@@ -11,6 +11,7 @@
 }
 body {
     padding: 2em;
+    font-family: "Red Hat Text", sans-serif;
 }
 
 .attribution { 
@@ -23,8 +24,8 @@ body {
 .cards {
     display: grid;
     grid-template-columns: 28em 28em 28em;
-    grid-template-rows: 25em 25em 25em;
-    grid: 20px;
+    grid-template-rows: 40em 40em 40em;
+    gap: 10px;
 }
 .card {
     display: flex;
@@ -74,5 +75,17 @@ body {
 button {
     margin-left: 25%;
     margin-top: 95%;
+    cursor: pointer;
+}
+.p-1 {
+    color: var(--Rose-300);
+}
+.p-2 {
+    color: var(--Rose-900);
+    font-weight: bold;
+}
+.price {
+    color: var(--Rose-500);
+    font-weight: bold;
 }
 
