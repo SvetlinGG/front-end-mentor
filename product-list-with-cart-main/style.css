@@ -9,6 +9,9 @@
     --Rose-500: hsl(12, 20%, 44%);
     --Rose-900: hsl(14, 65%, 9%);
 }
+body {
+    padding: 2em;
+}
 
 .attribution { 
     font-size: 11px; 
@@ -16,4 +19,19 @@
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+.cards {
+    display: grid;
+    grid-template-columns: 28em 28em 28em;
+    grid-template-rows: 25em 25em 25em;
+    grid: 20px;
+}
+.sweets {
+    width: 25em;
+    height: 35em;
+}
+img {
+    width: 25em;
+    height: 25em;
+    border-radius: 15px;
 }
