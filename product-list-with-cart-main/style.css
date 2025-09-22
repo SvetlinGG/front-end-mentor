@@ -54,6 +54,27 @@ body {
     border-radius: 15px;
     
 }
+.sweets-4 {
+    width: 25em;
+    height: 25em;
+    background-image: url('/assets/images/image-tiramisu-desktop.jpg');
+    border-radius: 15px;
+    
+}
+.sweets-5 {
+    width: 25em;
+    height: 25em;
+    background-image: url('/assets/images/image-baklava-desktop.jpg');
+    border-radius: 15px;
+    
+}
+.sweets-6 {
+    width: 25em;
+    height: 25em;
+    background-image: url('/assets/images/image-meringue-desktop.jpg');
+    border-radius: 15px;
+    
+}
 
 .add {
     width: 20px;
