@@ -1,5 +1,6 @@
 body {
-    margin: 2% 10%;
+    margin: 2% 15%;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .nav {
@@ -14,6 +15,38 @@ body {
     border-radius: 20px;
     width: 10em;
     height: 2.5em;
+    background-color: black;
+    color: white;
+}
+
+.main {
+    display: flex;
+    margin-top: 7em;
+    gap:5em;
+}
+.text-area {
+    width: 65em;
+}
+.maximize {
+    font-size: 50px;
+}
+
+.hero {
+    width: 50em;
+    height: 45em;
+    margin-top: -18em;
+}
+.influence {
+    margin-right: -8em;
+}
+p {
+    color: rgb(158, 153, 153);
+    width: 23em;
+}
+.get {
+    border-radius: 20px;
+    width: 9em;
+    height: 2.7em;
     background-color: black;
     color: white;
 }
