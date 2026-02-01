@@ -1,6 +1,7 @@
 body {
     margin: 2% 15%;
     font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 239, 231);
 }
 
 .nav {
@@ -43,10 +44,21 @@ p {
     color: rgb(158, 153, 153);
     width: 23em;
 }
-.get {
+.get-btn {
     border-radius: 20px;
     width: 9em;
     height: 2.7em;
-    background-color: black;
+    background: radial-gradient(circle at 0% 0%, rgba(255,255,255,0.35), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(255,255,255,0.15), transparent 55%),
+    linear-gradient(135deg, #ff8a00 0%, #ff4b2b 40%, #ff1744 100%);
+    box-shadow: 0 6px 16px rgba(255, 76, 43, 0.6);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border: none;;
     color: white;
+}
+
+.components {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
 }
