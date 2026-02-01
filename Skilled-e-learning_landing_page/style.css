@@ -94,5 +94,11 @@ h3 {
     font-size: 20px;
     font-weight: 800;
     color: #c13e27;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+.an, .de, .pho, .cri, .bus {
+    height: 7em;
+    width: 17em;
+    word-spacing: 5px;
+    
 }
