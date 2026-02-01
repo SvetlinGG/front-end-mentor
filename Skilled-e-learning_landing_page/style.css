@@ -1,0 +1,19 @@
+body {
+    margin: 2% 10%;
+}
+
+.nav {
+    display: flex;
+    gap:65%;
+    align-items: center;
+}
+.logo {
+    width: 5em;
+}
+.btn-start {
+    border-radius: 20px;
+    width: 10em;
+    height: 2.5em;
+    background-color: black;
+    color: white;
+}
