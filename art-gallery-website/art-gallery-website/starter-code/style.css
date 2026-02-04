@@ -35,8 +35,9 @@ span {
 }
 .arts {
     font-family: Verdana, Geneva, Tahoma;
-    font-size: 0.8em;
-    margin: -33em -19em;
-    width: 17em;
+    font-size: 0.9em;
+    margin: -30em -17em;
+    width: 19em;
     color: black;
+    word-spacing: 5px;
 }
