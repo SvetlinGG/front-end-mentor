@@ -20,7 +20,6 @@ body {
 }
 .text-items {
     display: flex;
-    border: 1px solid red;
 }
 .gallery {
     font-family: Verdana, Geneva, Tahoma;
@@ -32,5 +31,12 @@ h1 {
     color: white;
 }
 span {
+    color: black;
+}
+.arts {
+    font-family: Verdana, Geneva, Tahoma;
+    font-size: 0.8em;
+    margin: -33em -19em;
+    width: 17em;
     color: black;
 }
