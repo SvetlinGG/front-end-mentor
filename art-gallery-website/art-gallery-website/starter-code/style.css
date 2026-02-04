@@ -41,3 +41,10 @@ span {
     color: black;
     word-spacing: 5px;
 }
+button {
+    width: 13em;
+    height: 3em;
+}
+.location {
+    background: 60% black;
+}
