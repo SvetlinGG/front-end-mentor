@@ -1,3 +1,23 @@
-h1 {
-    color: aqua;
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+}
+.items {
+    display: flex;
+    
+}
+.hero {
+    width: 33%;
+    height: 37em;
+}
+.black {
+    width: 28%;
+    height: 37em;
+    background-color: black;
+}
+.text-items {
+    display: flex;
 }
