@@ -20,4 +20,15 @@ body {
 }
 .text-items {
     display: flex;
+    border: 1px solid red;
+}
+.gallery {
+    font-family: Verdana, Geneva, Tahoma;
+    font-size: 3em;
+    border:1px solid green;
+    width: 8em;
+}
+h1 {
+    margin:-10em 2.9em;
+    color: white;
 }
