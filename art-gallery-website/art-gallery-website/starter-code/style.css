@@ -98,6 +98,30 @@ body {
     font-size: 0.75rem;
     font-weight: 700;
   }
+  .gallery-container{
+    gap: 2rem;
+  }
+  .gallery-text {
+    display: flex;
+    flex-direction: column;
+    width: 18em;
+  }
+  .day {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    line-height: 1;
+    margin: 2rem 4rem;
+    width: 8em;
+  }
+  .day-text {
+    position: absolute;
+    margin: 9rem 4rem;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    width: 20rem;
+    color: #555;
+  }
+
   .gallery-hall {
     background: url("/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-grid-1.jpg");
     height: 500px;
