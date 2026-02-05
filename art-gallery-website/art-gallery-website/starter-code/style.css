@@ -3,7 +3,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .hero-header {
+  .hero-header, .gallery-container {
     max-width: 1200px;
     height: 550px;
     margin: 0 auto;
@@ -59,7 +59,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
     gap: 2rem;
     margin-left: -7rem;
   }
