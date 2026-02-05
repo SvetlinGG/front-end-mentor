@@ -105,6 +105,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 18em;
+    margin: 0 1rem;
   }
   .day {
     text-transform: uppercase;
@@ -122,9 +123,11 @@ body {
     color: #555;
   }
 
-  .gallery-hall {
-    background: url("/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-grid-1.jpg");
-    height: 500px;
+  .gallery-hall--image {
+    background: url("/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-grid-1.jpg") center/cover no-repeat;
+    height: 18rem;
+    width: 30rem;
+    margin: 1rem 7rem;
   }
 
 
