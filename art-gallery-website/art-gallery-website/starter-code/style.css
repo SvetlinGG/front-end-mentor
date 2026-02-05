@@ -5,10 +5,12 @@ body {
   
   .hero-header {
     max-width: 1200px;
+    height: 550px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 0 2em;
     display: flex;
     gap: 3rem;
+    border: 1px solid red;
   }
   
   
@@ -19,27 +21,34 @@ body {
   
   .hero-left-inner {
     display: flex;
-    height: 28rem; 
+    height: 33rem; 
   }
   
   .hero-panel {
     flex: 1;
+    
   }
   
   .hero-panel--black {
     background: #000;
     display: flex;
+    flex: 0 0 35%;
     align-items: center;
     padding: 2.5rem;
   }
   
   .hero-title {
-    margin: 0;
+    margin: 3rem 3.6rem;
     font-size: 3rem;
-    line-height: 1.05;
+    line-height: 1;
+    position: absolute;
+    width: 8em;
     color: #fff;
+    border: 1px solid red;
   }
-  
+  span {
+    color: #000;
+  }
   .hero-panel--image {
     background: url("/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-hero.jpg") center/cover no-repeat;
   }
@@ -51,6 +60,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid red;
     gap: 2rem;
   }
   
@@ -79,6 +89,7 @@ body {
   .hero-btn-label {
     font-size: 0.8rem;
     letter-spacing: 0.15em;
+    color: white;
   }
   
   .hero-btn-arrow {
