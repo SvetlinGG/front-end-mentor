@@ -98,7 +98,10 @@ body {
     font-size: 0.75rem;
     font-weight: 700;
   }
-  
+  .gallery-hall {
+    background: url("/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-grid-1.jpg");
+    height: 500px;
+  }
 
 
 /* body {
