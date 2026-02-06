@@ -3,7 +3,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .hero-header, .gallery-container, .picture-container {
+  .hero-header, .gallery-container, .picture-container, .footer-container {
     max-width: 1200px;
     height: 550px;
     margin: 0 auto;
@@ -165,6 +165,24 @@ body {
     font-size: 0.75rem;
     line-height: 1.9;
     width: 15rem;
+  }
+  .footer-container {
+    margin: 15rem 18rem;
+    background-color: #000;
+    height: 100px;
+    max-width: 1000px;
+  }
+
+  .footer-text {
+    color: white;
+    margin: -3rem 2rem;
+  }
+  .links {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    gap: 20px;
+    color: white;
   }
 
 
