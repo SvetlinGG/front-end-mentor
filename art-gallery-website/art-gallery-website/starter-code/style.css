@@ -142,13 +142,11 @@ body {
   .gallery-left {
     grid-column-start: span 2;
     grid-row-start: span 2;
-    border:1px solid red;
     background: url('/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-grid-2.jpg') center/cover no-repeat;
     
   }
   .gallery-right{
     background: url("/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-grid-3.jpg") center/cover no-repeat;
-    border: 1px solid green;
     grid-column-start: 3;
     margin:0 0.5rem;
   }
@@ -157,6 +155,16 @@ body {
     color: white;
     grid-column-start: 3;
     margin:0 0.5rem;
+    padding: 1rem 2rem;
+  }
+  .inspired {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  .exited {
+    font-size: 0.75rem;
+    line-height: 1.9;
+    width: 15rem;
   }
 
 
