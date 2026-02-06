@@ -188,6 +188,115 @@ body {
     color: white;
   }
 
+@media (max-width: 768px) {
+  .hero-header {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  .hero-left {
+    flex: 1;
+  }
+
+  .hero-left-inner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-panel--black {
+    display: none;
+  }
+
+  .hero-panel--image {
+    background: url("/art-gallery-website/art-gallery-website/starter-code/assets/mobile/image-hero.jpg") center/cover no-repeat;
+    height: 240px;
+  }
+
+  .hero-title {
+    position: static;
+    margin: 2rem 1rem;
+    font-size: 2.5rem;
+    width: auto;
+    color: #000;
+  }
+
+  .hero-right {
+    margin-left: 0;
+    padding: 0 1rem 2rem;
+  }
+
+  .hero-text {
+    width: auto;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .gallery-text {
+    width: auto;
+    margin: 0;
+  }
+
+  .day {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    width: auto;
+  }
+
+  .day-text {
+    position: static;
+    margin: 0;
+    width: auto;
+  }
+
+  .gallery-hall--image {
+    background: url("/art-gallery-website/art-gallery-website/starter-code/assets/mobile/image-grid-1.jpg") center/cover no-repeat;
+    width: 100%;
+    height: 240px;
+    margin: 1rem 0;
+  }
+
+  .picture-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .gallery-left {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background: url('/art-gallery-website/art-gallery-website/starter-code/assets/mobile/image-grid-2.jpg') center/cover no-repeat;
+    height: 240px;
+  }
+
+  .gallery-right {
+    background: url("/art-gallery-website/art-gallery-website/starter-code/assets/mobile/image-grid-3.jpg") center/cover no-repeat;
+    grid-column-start: 1;
+    margin: 0;
+    height: 240px;
+  }
+
+  .come {
+    grid-column-start: 1;
+    margin: 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    height: auto;
+    align-items: flex-start;
+  }
+}
+
 
 /* body {
     width: 70%;
