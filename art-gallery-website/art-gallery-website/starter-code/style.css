@@ -188,7 +188,7 @@ body {
     color: white;
   }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   .hero-header {
     flex-direction: column;
     height: auto;
