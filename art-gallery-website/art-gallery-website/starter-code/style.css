@@ -3,7 +3,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .hero-header, .gallery-container {
+  .hero-header, .gallery-container, .picture-container {
     max-width: 1200px;
     height: 550px;
     margin: 0 auto;
@@ -128,6 +128,35 @@ body {
     height: 18rem;
     width: 30rem;
     margin: 1rem 7rem;
+  }
+
+  .picture-container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    margin: -15rem 16rem;
+    padding: 1rem 1rem 2rem 2em;
+  }
+  .gallery-left {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    border:1px solid red;
+    background: url('/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-grid-2.jpg') center/cover no-repeat;
+    
+  }
+  .gallery-right{
+    background: url("/art-gallery-website/art-gallery-website/starter-code/assets/desktop/image-grid-3.jpg") center/cover no-repeat;
+    border: 1px solid green;
+    grid-column-start: 3;
+    margin:0 0.5rem;
+  }
+  .come {
+    background-color: #000;
+    color: white;
+    grid-column-start: 3;
+    margin:0 0.5rem;
   }
 
 
