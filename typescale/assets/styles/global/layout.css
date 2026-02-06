@@ -1,0 +1,15 @@
+body {
+  padding: var(--size-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-5);
+}
+
+main {
+  flex: 1 1 40ch;
+}
+
+aside {
+  flex: 1 1 25ch;
+  font-size: 0.8em;
+}

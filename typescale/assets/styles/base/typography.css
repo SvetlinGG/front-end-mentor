@@ -1,0 +1,41 @@
+html {
+  font-family: Lato, Georgia, sans-serif;
+  line-height: 1.5;
+  font-size: var(--size-0);
+  
+  font-variant: normal;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures,contextual;
+  font-feature-settings: "kern","liga","clig","calt";
+
+  text-rendering: optimizeLegibility;
+  text-wrap: pretty;
+}
+
+body, button, input, textarea, select, option, table {
+    font: inherit;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+}
+
+hr {
+  margin-block: 3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin-bottom: 0.3em;
+  
+  &:not(:first-child) {
+    margin-top: 1em;
+  }
+}
+
+h1 { font-size: var(--size-5); }
+h2 { font-size: var(--size-4); }
+h3 { font-size: var(--size-3); }
+h4 { font-size: var(--size-2); }
+h5 { font-size: var(--size-1); }
+h6 { font-size: var(--size-0); }
