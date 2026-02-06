@@ -170,12 +170,15 @@ body {
     margin: 15rem 18rem;
     background-color: #000;
     height: 100px;
+    gap: 20rem;
     max-width: 1000px;
+    align-items: center;
   }
 
   .footer-text {
     color: white;
-    margin: -3rem 2rem;
+    /* margin: -4rem 2rem; */
+    font-size: 0.7rem;
   }
   .links {
     display: flex;
