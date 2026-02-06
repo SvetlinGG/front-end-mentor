@@ -39,3 +39,11 @@ h3 { font-size: var(--size-3); }
 h4 { font-size: var(--size-2); }
 h5 { font-size: var(--size-1); }
 h6 { font-size: var(--size-0); }
+
+.rte {
+
+  ul, ol {
+    padding-left: 1.5em;
+  }
+
+}

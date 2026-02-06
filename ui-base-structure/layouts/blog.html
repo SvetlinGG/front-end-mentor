@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Blog</title>
+    <link rel="stylesheet" href="/assets/styles/app.css">
+    <style>
+
+        :root {
+            --size-main: 80ch;
+            --size-aside: 30ch;
+            --size-spacing: 2ch;
+        }
+        
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--size-spacing);
+
+            padding: var(--size-5) max(var(--size-5), calc((100% - (var(--size-main) + var(--size-aside) + var(--size-spacing))) / 2));
+
+            & > * {
+                outline: 2px solid black;
+            }
+
+            & > header,
+            & > footer {
+                flex: 1 1 100%;
+            }
+
+            & > main {
+                flex: 1 1 var(--size-main);
+            }
+            
+            & > aside {
+                flex: 1 1 var(--size-aside); 
+            }
+
+
+            & > header {
+                background: red;
+            }
+
+        }
+
+        ul {
+            li {
+                display: block;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Site title</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <h2>Main title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem ducimus illo alias assumenda cupiditate earum? Accusamus, alias. Consequatur ea quas debitis quae laboriosam consectetur deserunt. Fuga recusandae porro cum.</p>
+        
+    </main>
+    
+    <aside>
+        
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+        
+    </aside>
+    
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+    
+</body>
+</html>
