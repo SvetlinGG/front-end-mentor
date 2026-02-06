@@ -170,9 +170,10 @@ body {
     margin: 15rem 18rem;
     background-color: #000;
     height: 100px;
-    gap: 20rem;
+    /* gap: 5rem; */
     max-width: 1000px;
     align-items: center;
+    justify-content: space-around;
   }
 
   .footer-text {
