@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="/assets/styles/app.css">
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+            gap: var(--size-3);
+            padding: var(--size-5);
+        }
+
+        .card {
+            border: 2px solid #CCC;
+            border-radius: 0.3em;
+            padding: var(--size-3);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Card 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="card">
+        <h2>Card 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="card">
+        <h2>Card 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="card">
+        <h2>Card 4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="card">
+        <h2>Card 5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="card">
+        <h2>Card 6</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>
