@@ -5,4 +5,5 @@
 
 @import url(global/layout.css);
 
-@import url(components/form.css)
+@import url(components/form.css);
+@import url(components/article.css);
