@@ -1,0 +1,47 @@
+body{
+display: flex;
+flex-wrap: wrap;
+gap: var(--size-3);
+padding: var(--size-5);
+}
+
+.card {
+display: flex;
+flex-direction: column;
+flex: 1 1 20ch;
+border: 2px solid #CCC;
+border-radius: 0.3em;
+padding: var(--size-3);
+}
+
+.card-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: var(--size-2);
+}
+
+.card-body {
+flex: 1;
+}
+
+.card-footer {
+display: flex;
+gap: 0.5em;
+margin-top: var(--size-2);
+}
+
+button {
+flex: 1;
+border: 2px solid #CCC;
+border-radius: 0.3em;
+background-color: transparent;
+padding: 0.3em 0.6em;
+}
+
+.badge {
+padding: 0.2em 0.5em;
+border-radius: 0.2em;
+background-color: #EEE;
+font-size: 0.8em;
+}
