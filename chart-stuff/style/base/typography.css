@@ -1,0 +1,7 @@
+:root {
+    --t-12: clamp(12px, 1.05vw, 14px);
+    --t-14: clamp(13px, 1.15vw, 15px);
+    --t-16: clamp(14px, 1.25vw, 16px);
+    --t-18: clamp(16px, 1.45vw, 18px);
+    --t-44: clamp(30px, 3.4vw, 44px);
+}
