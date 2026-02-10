@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard 1:1</title>
+  
+</head>
+
+<body>
+  <main class="dashboard" aria-label="Financial dashboard">
+
+    <!-- KPI row -->
+    <section class="kpis" aria-label="Key metrics">
+      <article class="card kpi" aria-label="Revenue">
+        <header>Revenue</header>
+        <div class="value">$967,830</div>
+        <div class="delta">
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 14l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            +7.4%
+          </span>
+          <span>vs last 12 months</span>
+        </div>
+      </article>
+
+      <article class="card kpi" aria-label="Net Profit">
+        <header>Net Profit</header>
+        <div class="value">$616,410</div>
+        <div class="delta">
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 14l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            +16.2%
+          </span>
+          <span>vs last 12 months</span>
+        </div>
+      </article>
+
+      <article class="card kpi" aria-label="Expenses">
+        <header>Expenses</header>
+        <div class="value">$351,420</div>
+        <div class="delta">
+          <span class="badge badge--orange">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="transform: rotate(180deg)">
+              <path d="M7 14l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            +5.1%
+          </span>
+          <span>vs last 12 months</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- bottom row -->
+    <section class="lower" aria-label="Charts">
+      <!-- Revenue by Category -->
+      <article class="card revenue" aria-label="Revenue by Category">
+        <h2>Revenue by Category</h2>
+
+        <div class="wrap">
+          <figure class="donut" role="img" aria-label="Revenue split donut chart">
+            <div class="center">
+              <div class="bubble">
+                <div class="label">Total</div>
+                <div class="total">$967,830</div>
+              </div>
+            </div>
+          </figure>
+
+          <ul aria-label="Category legend">
+            <li>
+              <span class="dot" style="background:#18c86a"></span>
+              <span class="name">Service contracts</span>
+              <span class="pct">27%</span>
+              <span class="amt">$261,314</span>
+            </li>
+            <li>
+              <span class="dot" style="background:#11b8c2"></span>
+              <span class="name">One-time projects</span>
+              <span class="pct">24%</span>
+              <span class="amt">$232,279</span>
+            </li>
+            <li>
+              <span class="dot" style="background:#ff8a00"></span>
+              <span class="name">Usage-based billing</span>
+              <span class="pct">22%</span>
+              <span class="amt">$212,923</span>
+            </li>
+            <li>
+              <span class="dot" style="background:#1f39c7"></span>
+              <span class="name">Recurring licenses</span>
+              <span class="pct">16%</span>
+              <span class="amt">$154,853</span>
+            </li>
+            <li>
+              <span class="dot" style="background:#f5c24f"></span>
+              <span class="name">Other income</span>
+              <span class="pct">11%</span>
+              <span class="amt">$106,461</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Cash Flow -->
+      <article class="card cash" aria-label="Cash Flow">
+        <h2>Cash Flow</h2>
+
+        <div class="topline">
+          <div class="legend" aria-label="Legend">
+            <span class="key"><span class="sw" style="background:var(--green)"></span>Revenue</span>
+            <span class="key"><span class="sw" style="background:var(--orange)"></span>Expenses</span>
+          </div>
+
+          <div class="totals" aria-label="Totals">
+            <div class="big">$967,830</div>
+            <div class="big">$351,420</div>
+          </div>
+        </div>
+
+        <div class="plot" aria-label="Cash flow chart">
+          <div class="y" aria-hidden="true">
+            <div>150k</div>
+            <div>100k</div>
+            <div>50k</div>
+            <div>0k</div>
+            <div>-50k</div>
+          </div>
+
+          <div class="grid">
+            <ul class="bars" aria-label="Months">
+              <li class="m" style="--rev: 48%; --exp: 22%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Feb</div>
+              </li>
+              <li class="m" style="--rev: 38%; --exp: 26%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Mar</div>
+              </li>
+              <li class="m" style="--rev: 60%; --exp: 12%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Apr</div>
+              </li>
+              <li class="m" style="--rev: 36%; --exp: 28%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">May</div>
+              </li>
+              <li class="m" style="--rev: 74%; --exp: 30%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Jun</div>
+              </li>
+              <li class="m" style="--rev: 76%; --exp: 14%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Jul</div>
+              </li>
+              <li class="m" style="--rev: 46%; --exp: 26%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Aug</div>
+              </li>
+              <li class="m" style="--rev: 54%; --exp: 18%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Sept</div>
+              </li>
+              <li class="m" style="--rev: 38%; --exp: 22%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Oct</div>
+              </li>
+              <li class="m" style="--rev: 22%; --exp: 20%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Nov</div>
+              </li>
+              <li class="m" style="--rev: 46%; --exp: 12%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Dec</div>
+              </li>
+              <li class="m" style="--rev: 28%; --exp: 14%;">
+                <div class="stack"><div class="rev"></div><div class="exp"></div></div>
+                <div class="lab">Jan</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+</body>
+</html>

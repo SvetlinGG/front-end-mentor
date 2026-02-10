@@ -1,0 +1,6 @@
+:root {
+    --page-pad: clamp(16px, 2.2vw, 28px);
+    --gap: clamp(14px, 2vw, 22px);
+    --radius: clamp(18px, 2vw, 26px);
+    --pad: clamp(18px, 2.2vw, 30px);
+}
