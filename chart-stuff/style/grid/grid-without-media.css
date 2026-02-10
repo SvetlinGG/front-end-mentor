@@ -1,0 +1,21 @@
+
+main.dashboard{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: var(--page-pad);
+    display:grid;
+    gap: var(--gap);
+  }
+
+  section.kpis{
+    display:grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr));
+  }
+
+  section.lower{
+    display:grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 470px), 1fr));
+    align-items: stretch;
+  }
