@@ -1,0 +1,40 @@
+article.kpi{
+    display:grid;
+    gap: clamp(10px, 1.1vw, 14px);
+
+    & header{
+      font-size: var(--t-16);
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+
+    & .value{
+      font-size: var(--t-44);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    & .delta{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      font-size: var(--t-14);
+      color: var(--muted);
+
+      & .badge{
+        display:inline-flex;
+        align-items:center;
+        gap: 6px;
+        font-weight: 650;
+        color: var(--green);
+      }
+
+      & .badge.badge--orange{ color: var(--orange); }
+
+      & svg{
+        width: 18px;
+        height: 18px;
+        display:block;
+      }
+    }
+  }
