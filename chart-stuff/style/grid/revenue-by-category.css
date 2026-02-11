@@ -1,0 +1,101 @@
+article.revenue{
+    display:grid;
+    gap: clamp(16px, 2vw, 22px);
+
+    & h2{
+      margin:0;
+      font-size: var(--t-18);
+      font-weight: 650;
+      letter-spacing: .2px;
+    }
+
+    & .wrap{
+      display:grid;
+      gap: clamp(18px, 2.2vw, 26px);
+    }
+
+    /* donut */
+    & .donut{
+      --size: clamp(200px, 22vw, 270px);
+      --thick: clamp(26px, 2.4vw, 34px);
+
+      width: var(--size);
+      aspect-ratio: 1/1;
+      margin-inline: auto;
+      border-radius: 50%;
+      position: relative;
+
+      /* slice proportions similar to screenshot */
+      background:
+        conic-gradient(
+          #18c86a 0 105deg,      
+          #11b8c2 105deg 190deg, 
+          #ff8a00 190deg 270deg, 
+          #1f39c7 270deg 325deg, 
+          #f5c24f 325deg 360deg  
+        );
+
+      /* ring cutout */
+      -webkit-mask: radial-gradient(farthest-side,
+        transparent calc(50% - (var(--thick) / 2)),
+        #000 calc(50% - (var(--thick) / 2) + 1px)
+      );
+      mask: radial-gradient(farthest-side,
+        transparent calc(50% - (var(--thick) / 2)),
+        #000 calc(50% - (var(--thick) / 2) + 1px)
+      );
+
+      & .center{
+        position:absolute;
+        inset: 0;
+        display:grid;
+        place-items:center;
+        pointer-events:none;
+
+        & .bubble{
+          width: calc(var(--size) - (var(--thick) * 2) - 10px);
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          background:#fff;
+          box-shadow: var(--shadow-soft);
+          display:grid;
+          place-items:center;
+          text-align:center;
+          gap: 2px;
+
+          & .label{
+            font-size: var(--t-12);
+            color: var(--muted);
+            margin-top: 2px;
+          }
+          & .total{
+            font-size: clamp(18px, 1.9vw, 22px);
+            font-weight: 700;
+            letter-spacing: .2px;
+          }
+        }
+      }
+    }
+
+    /* legend list */
+    & ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap: clamp(12px, 1.25vw, 14px);
+      font-size: var(--t-16);
+    }
+
+    & li{
+      display:grid;
+      grid-template-columns: 14px 1fr auto auto;
+      align-items:center;
+      column-gap: clamp(10px, 1.2vw, 14px);
+
+      & .dot{ width: 12px; height: 12px; border-radius: 999px; }
+      & .name{ color: var(--ink); }
+      & .pct{ color: var(--muted); justify-self:end; font-variant-numeric: tabular-nums; }
+      & .amt{ justify-self:end; font-variant-numeric: tabular-nums; }
+    }
+  }
