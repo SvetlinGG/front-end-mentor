@@ -6,12 +6,12 @@
     --size-4: clamp(1.4256em, 1.01em + 1.8469vw, 2.4414em);
     --size-5: clamp(1.7107em, 1.1621em + 2.4383vw, 3.0518em);
 
-    /*  Primary Colors */
+    /*  Primary  */
     --green-200: hsl(148, 38%, 91%);
     --green-600: hsl(169, 82%, 27%);
     --red: hsl(0, 66%, 54%);
 
-    /*  Neutral Colors */
+    /*  Neutral  */
     --white: hsl(0, 0%, 100%);
     --grey-500: hsl(186, 15%, 59%);
     --grey-900: hsl(187, 24%, 22%);
