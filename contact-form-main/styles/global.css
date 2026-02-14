@@ -5,10 +5,20 @@
     --size-3: clamp(1.188em, 0.875em + 1.3911vw, 1.9531em);
     --size-4: clamp(1.4256em, 1.01em + 1.8469vw, 2.4414em);
     --size-5: clamp(1.7107em, 1.1621em + 2.4383vw, 3.0518em);
+
+    /*  Primary Colors */
+    --green-200: hsl(148, 38%, 91%);
+    --green-600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+
+    /*  Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --grey-500: hsl(186, 15%, 59%);
+    --grey-900: hsl(187, 24%, 22%);
   }
 
   body {
-    background-color: rgb(163, 200, 200);
+    background-color: var(--green-200);
   }
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
