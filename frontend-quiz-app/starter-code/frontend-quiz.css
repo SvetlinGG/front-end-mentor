@@ -4,16 +4,17 @@ body{
 
 .container{
     display: flex;
-    margin: 15rem 30rem;
+    margin: 15rem 10rem;
 }
 
 .container-items{
-    margin: -33.5px auto;
+    
 }
 
 .container-dev-links{
     display: flex;
     flex-direction: column;
+    margin-left: 0.2rem;
 }
 
 h1{
@@ -34,7 +35,7 @@ button {
     border: none;
     border-radius: 10px;
     color: antiquewhite;
-    margin-left: 4rem;
+    cursor: pointer;
 }
 
 .btn{
