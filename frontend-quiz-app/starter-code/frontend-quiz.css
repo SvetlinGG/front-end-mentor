@@ -4,7 +4,7 @@ body{
 
 .container{
     display: flex;
-    margin: 15rem 10rem;
+    margin: 20vw 15vw;
 }
 
 .container-items{
@@ -28,7 +28,7 @@ span{
 }
 
 button {
-    width: 30rem;
+    width: 35vw;
     height: 4rem;
     margin-bottom: 15px;
     background-color: rgb(51, 63, 76);
