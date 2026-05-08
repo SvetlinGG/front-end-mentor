@@ -27,12 +27,23 @@ span{
 }
 
 button {
-    width: 25rem;
-    height: 3.5rem;
+    width: 30rem;
+    height: 4rem;
     margin-bottom: 15px;
     background-color: rgb(51, 63, 76);
     border: none;
     border-radius: 10px;
     color: antiquewhite;
     margin-left: 4rem;
+}
+
+.btn{
+    align-items: center;
+    
+}
+
+img{
+    background-color: azure;
+    border-radius: 5px;
+    
 }
