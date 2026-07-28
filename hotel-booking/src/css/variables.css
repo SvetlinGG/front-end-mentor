@@ -1,0 +1,37 @@
+
+ /* Colors
+
+ Neutral */
+:root {
+--Neutral900: hsl(33, 15%, 15%);
+--Neutral800: hsl(33, 22%, 20%);
+--Neutral700: hsl(32, 20%, 29%);
+--Neutral600: hsl(33, 17%, 41%);
+--Neutral400: hsl(36, 22%, 86%);
+--Neutral200: hsl(30, 24%, 93%);
+--Neutral100: hsl(35, 60%, 96%);
+--Neutral50: hsl(40, 60%, 98%);
+--Neutral0: hsl(0, 0%, 100%);
+
+/* Sun */
+
+--Sun500: hsl(42, 83%, 58%);
+--Sun300: hsl(44, 84%, 75%);
+--Sun200: hsl(45, 100%, 74%);
+--Sun50: hsl(41, 100%, 93%);
+
+/* Terracotta */
+
+--Terracotta700: hsl(15, 69%, 37%);
+--Terracotta600: hsl(15, 74%, 41%);
+--Terracotta500: hsl(18, 62%, 47%);
+--Terracotta400: hsl(22, 72%, 56%);
+
+/* Blue */
+
+--Blue500: hsl(230, 49%, 56%);
+
+/* Rose */
+
+--Rose500: hsl(340, 48%, 52%);
+}
