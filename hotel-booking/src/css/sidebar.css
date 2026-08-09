@@ -33,13 +33,12 @@ span{
 
 .number{
     display: flex;
-    gap: 4vw;
+    gap: 5vw;
 }
 .one{
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
     background-color: var(--Rose500);
     border-radius: 3em;
     color: var(--Neutral0);
-    content: '1';
 }
