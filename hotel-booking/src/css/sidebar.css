@@ -57,13 +57,13 @@ span{
 }
 .today, .degree, .sunny{
     margin-left: 1em;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 .degree{
     margin-left: 0.5em;
     margin-top: -0.3em;
     font-size: 1.8em;
-    
+    font-style: italic;
 }
 .sunny{
     margin-top: -1.8em;
