@@ -52,5 +52,19 @@ span{
 .weather {
     font-family: var(--DM-Mono);
     color: var(--Neutral700);
-    background-color: red;
+    background-color: var(--Sun300);
+    border-radius: 1em;
+}
+.today, .degree, .sunny{
+    margin-left: 1em;
+    font-size: 0.9em;
+}
+.degree{
+    margin-left: 0.5em;
+    margin-top: -0.3em;
+    font-size: 1.8em;
+    
+}
+.sunny{
+    margin-top: -1.8em;
 }
