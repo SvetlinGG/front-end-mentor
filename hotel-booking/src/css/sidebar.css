@@ -68,3 +68,7 @@ span{
 .sunny{
     margin-top: -1.8em;
 }
+
+.bottom-text{
+    color: var(--Neutral600);
+}
