@@ -14,9 +14,15 @@
     display:flex;
     gap: 0.8em;
     color: var(--Neutral600);
-    margin-left: 1vw;
+    margin-left: 0.5vw;
     font-family: var(--DM-Mono);
     font-size: 0.9em;
+    cursor: pointer;
+    padding-left: 0.7em;
+    border-radius: 10px;
+}
+.stay:hover, .house:hover, .town:hover, .breakfast:hover, .message:hover{
+    background-color: var(--Neutral0);
 }
 .maison-text{
     display:flex;
