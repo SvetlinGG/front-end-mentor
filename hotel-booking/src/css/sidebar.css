@@ -48,3 +48,9 @@ span{
     border-radius: 3em;
     color: var(--Neutral0);
 }
+
+.weather {
+    font-family: var(--DM-Mono);
+    color: var(--Neutral700);
+    background-color: red;
+}
