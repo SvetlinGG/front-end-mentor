@@ -71,4 +71,5 @@ span{
 
 .bottom-text{
     color: var(--Neutral600);
+    font-family: var(--DM-Mono);
 }
