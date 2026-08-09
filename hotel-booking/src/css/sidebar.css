@@ -3,15 +3,43 @@
     height: 100%;
     display:flex;
     flex-direction: column;
-    border:1px solid red;
+    
 }
 .maison-soleil {
-    border-bottom: 1px solid var(--Neutral600);
+    display: flex;
+    border-bottom: 1px solid var(--Neutral400);
+    gap: 0.5em;
 }
-.maison-soleil, .stay, .house, .pin, .breakfast, .mail{
+.stay, .house, .town, .breakfast, .message{
     display:flex;
-
+    gap: 0.8em;
+    color: var(--Neutral600);
+    margin-left: 1vw;
+    font-family: var(--DM-Mono);
+    font-size: 0.9em;
+}
+.maison-text{
+    display:flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: bold;
 }
 span{
-    color: var(--Terracotta500);
+    color: var(--Terracotta400);
+    font-family: var(--Fraunces);
+    font-style: italic;
+}
+
+.number{
+    display: flex;
+    gap: 4vw;
+}
+.one{
+    width: 1.5em;
+    height: 1.5em;
+    background-color: var(--Rose500);
+    border-radius: 3em;
+    color: var(--Neutral0);
+    content: '1';
 }
