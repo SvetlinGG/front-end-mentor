@@ -20,6 +20,7 @@
     cursor: pointer;
     padding-left: 0.7em;
     border-radius: 10px;
+    
 }
 .stay:hover, .house:hover, .town:hover, .breakfast:hover, .message:hover{
     background-color: var(--Neutral0);
@@ -49,14 +50,15 @@ span{
     background-color: var(--Rose500);
     border-radius: 3em;
     color: var(--Neutral0);
+    content: "one";
 }
 
 .weather {
     font-family: var(--DM-Mono);
     color: var(--Neutral700);
-    background-color: var(--Sun300);
     border-radius: 1em;
-    margin-top: 10em;
+    margin-top: 13em;
+    background-color: var(--Sun300);
 }
 .today, .degree, .sunny{
     margin-left: 1em;
@@ -71,8 +73,19 @@ span{
 .sunny{
     margin-top: -1.8em;
 }
+.sunlight{
+    width: 3em;
+    height: 3em;
+    margin-left: 11em;
+}
+.today {
+    margin-top: -1em;
+}
 
 .bottom-text{
+    margin-top: 1.7em;
     color: var(--Neutral600);
     font-family: var(--DM-Mono);
+    font-size: 0.7em;
+    margin-left: 0.5vw;
 }
