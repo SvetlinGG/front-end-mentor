@@ -27,13 +27,16 @@
 }
 .print {
     display: flex;
-    gap: 1em
+    gap: 1em;
+    margin-top: 15px;
 }
 .btn-print {
     width: 8em;
     height: 2.2em;
     border-radius: 15px;
     cursor: pointer;
+    background-color: var(--Neutral50);
+    border: 1px solid var(--Neutral400);
 }
 .btn-add {
     width: 11em;
