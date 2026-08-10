@@ -25,3 +25,21 @@
     font-weight: 600;
     margin-top: 10px;
 }
+.print {
+    display: flex;
+    gap: 1em
+}
+.btn-print {
+    width: 8em;
+    height: 2.2em;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-add {
+    width: 11em;
+    height: 2.5em;
+    border-radius: 15px;
+    background-color: var(--Neutral900);
+    color: var(--Neutral50);
+    cursor: pointer;
+}
