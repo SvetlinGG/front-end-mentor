@@ -1,3 +1,27 @@
 .guest-navigation {
     display: flex;
 }
+.basic-view {
+    border-left: 1px solid var(--Neutral400);
+    margin-left: 1em;
+}
+.booking {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.8em;
+    margin-top: 1.6em;
+}
+
+.book {
+    font-family: var(--DM-Mono);
+    color: var(--Neutral600);
+    font-size: small;
+
+}
+
+.lucia {
+    font-family: var(--DM-Mono);
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 10px;
+}
