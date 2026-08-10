@@ -2,3 +2,11 @@ body {
     margin: 1vw;
     background-color: var(--Neutral100);
 }
+
+.big-sun {
+    margin: 13em 25em;
+}
+
+section {
+    margin-top: -35em;
+}
