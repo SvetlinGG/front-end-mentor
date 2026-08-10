@@ -9,4 +9,12 @@ body {
 
 section {
     margin-top: -35em;
+    border:1px solid red;
+    width: 25em;
+    height: 27em;
+}
+
+.recept {
+    display: flex;
+    justify-content: space-between;
 }
