@@ -18,7 +18,9 @@ section {
     margin-left: 15em;
 }
 
-
+section:hover {
+    transform: rotate(-20deg);
+}
 
 .recept {
     display: flex;
