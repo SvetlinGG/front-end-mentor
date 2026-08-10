@@ -8,11 +8,17 @@ body {
 }
 
 section {
+    position: absolute;
     margin-top: -35em;
-    border:1px solid red;
+    border:1px solid var(--Neutral400);
     width: 25em;
     height: 27em;
+    background-color: var(--Neutral0);
+    border-radius: 20px;
+    margin-left: 15em;
 }
+
+
 
 .recept {
     display: flex;
