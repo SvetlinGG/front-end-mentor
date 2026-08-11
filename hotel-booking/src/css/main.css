@@ -9,13 +9,13 @@ body {
 
 section {
     position: absolute;
-    margin-top: -35em;
+    margin-top: -50vh;
     border:1px solid var(--Neutral400);
-    width: 25em;
-    height: 27em;
+    width: 50vh;
+    height: 55vh;
     background-color: var(--Neutral0);
     border-radius: 20px;
-    margin-left: 15em;
+    margin-left: 25vh;
 }
 
 section:hover {
