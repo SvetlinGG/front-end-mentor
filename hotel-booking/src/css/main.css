@@ -29,7 +29,7 @@ section:hover {
     justify-content: space-between;
     border-bottom: 1px solid var(--Neutral200);
 }
-.recept-text, .num {
+.recept-text, .num, .in, .out {
     color: var(--Neutral600);
     font-size: 0.7rem;
 
@@ -42,4 +42,27 @@ section:hover {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+.date-section{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--Neutral200);
+}
+.in, .out {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+} 
+
+.sat, .wed {
+    font-size: small;
+    margin-top: -1.5rem;
+    color: var(--Neutral600);
+}
+.april {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 900;
+    margin-top: -0.3rem;
 }
