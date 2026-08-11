@@ -1,0 +1,12 @@
+
+
+.card{
+    position: absolute;
+    margin-top: -50vh;
+    border:1px solid var(--Neutral400);
+    width: 50vh;
+    height: 50vh;
+    margin-left: 85vh;
+    padding: 1rem;
+    box-shadow: 5px 15px 10px var(--Neutral700);
+}
