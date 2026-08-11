@@ -18,6 +18,7 @@ section {
     margin-left: 25vh;
     font-family: var(--DM-Mono);
     padding: 1rem;
+    box-shadow: 5px 15px 10px var(--Neutral700);
 }
 
 section:hover {
