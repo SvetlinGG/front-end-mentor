@@ -36,8 +36,10 @@
 --Rose500: hsl(340, 48%, 52%);
 
 /* FONTS */
-
---Fraunces: "Fraunces";
+--Fraunces: "Fraunces", serif;
+--DM-Sans: "DM Sans", sans-serif;
+--DM-Mono: "DM Mono", monospace;
+/* --Fraunces: "Fraunces";
 --DM-Sans: "DM+Sans";
---DM-Mono: Verdana, Geneva, Tahoma, sans-serif;
+--DM-Mono: Verdana, Geneva, Tahoma, sans-serif; */
 }
