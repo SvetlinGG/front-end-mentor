@@ -1,12 +1,11 @@
 .sidebar {
-    width: 80vw;
-    height: 100%;
     display:flex;
     flex-direction: column;
-    
+    min-height: 100vh;
 }
 .maison-soleil {
     display: flex;
+    align-items: center;
     border-bottom: 1px solid var(--Neutral400);
     gap: 0.5em;
 }
@@ -19,13 +18,22 @@
     font-size: 0.9em;
     cursor: pointer;
     padding-left: 0.7em;
-    border-radius: 10px;
+    align-items: center;
     
 }
 .stay:hover, .house:hover, .town:hover, .breakfast:hover, .message:hover{
     background-color: var(--Neutral0);
     color: var(--Neutral900);
     font-size: 0.93em;
+    border-radius: 10px;
+}
+.stay-img, .house-img, .town-img, .breakfast-img, .message-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.sun {
+    width: 3rem;
+    height: 3rem;
 }
 .maison-text{
     display:flex;
@@ -34,7 +42,7 @@
     font-style: normal;
     font-weight: bold;
 }
-span{
+.maison-text span{
     color: var(--Terracotta400);
     font-family: var(--Fraunces);
     font-style: italic;
@@ -57,7 +65,7 @@ span{
     font-family: var(--DM-Mono);
     color: var(--Neutral700);
     border-radius: 1em;
-    margin-top: 13em;
+    margin-top: auto;
     background-color: var(--Sun300);
 }
 .today, .degree, .sunny{

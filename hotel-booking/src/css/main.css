@@ -4,7 +4,7 @@ body {
 }
 
 .big-sun {
-    margin: 13em 25em;
+    margin: 15vh 60vh;
 }
 
 section {
@@ -19,7 +19,7 @@ section {
 }
 
 section:hover {
-    transform: rotate(-20deg);
+    
 }
 
 .recept {
