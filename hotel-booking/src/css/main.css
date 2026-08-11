@@ -22,7 +22,8 @@ section {
 }
 
 section:hover {
-    
+    transform:rotate(-25deg);
+
 }
 
 .recept {
