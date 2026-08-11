@@ -16,6 +16,8 @@ section {
     background-color: var(--Neutral0);
     border-radius: 20px;
     margin-left: 25vh;
+    font-family: var(--DM-Mono);
+    padding: 1rem;
 }
 
 section:hover {
@@ -25,4 +27,19 @@ section:hover {
 .recept {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid var(--Neutral200);
+}
+.recept-text, .num {
+    color: var(--Neutral600);
+    font-size: 0.7rem;
+
+}
+.your {
+    font-style: italic;
+    font-weight: 700;
+}
+.num {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
