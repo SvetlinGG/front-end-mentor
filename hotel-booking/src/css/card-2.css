@@ -9,4 +9,6 @@
     margin-left: 85vh;
     padding: 1rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
+    background-color: var(--Terracotta600);
+    border-radius: 20px;
 }
