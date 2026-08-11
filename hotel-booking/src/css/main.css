@@ -66,3 +66,9 @@ section:hover {
     font-weight: 900;
     margin-top: -0.3rem;
 }
+.price {
+    display: flex;
+    justify-content: space-between;
+    color: var(--Neutral800);
+    font-size: small;
+}
