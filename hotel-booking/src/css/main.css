@@ -19,10 +19,11 @@ section {
     font-family: var(--DM-Mono);
     padding: 1rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
+    transform:rotate(-8deg);
 }
 
 section:hover {
-    transform:rotate(-25deg);
+    transform: translateX(-30%);
 
 }
 
