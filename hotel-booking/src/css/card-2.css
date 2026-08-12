@@ -1,14 +1,44 @@
 
 
-.card{
+article{
     position: absolute;
     margin-top: -50vh;
     border:1px solid var(--Neutral400);
     width: 50vh;
     height: 50vh;
-    margin-left: 85vh;
+    margin-left: 80vh;
     padding: 1rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
     background-color: var(--Terracotta600);
     border-radius: 20px;
+    font-family: var(--DM-Mono);
+    padding: 1rem;
+    transform:rotate(5deg);
+}
+article:hover {
+    transform: translateX(30%);
+}
+.card {
+    color: var(--Sun50);
+    font-size: small;
+}
+.card-sun {
+    margin-left: 21rem;
+    margin-top: -2rem;
+}
+.note {
+    color: var(--Sun50);
+}
+.from {
+    color: var(--Sun300);
+    font-style: italic;
+    font-size: 1.2rem;
+}
+h1 {
+    font-style: italic;
+    margin-top: -0.5rem;
+}
+.room {
+    color: var(--Sun50);
+    margin-top: 3rem;
 }

@@ -19,7 +19,7 @@ section {
     font-family: var(--DM-Mono);
     padding: 1rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
-    transform:rotate(-8deg);
+    transform:rotate(-5deg);
 }
 
 section:hover {
@@ -84,7 +84,7 @@ section:hover {
     color: var(--Neutral600);
 }
 .wise {
-    /* margin-top: 0.1rem; */
+    margin-top: -0.5rem;
     align-items: center;
 }
 .eu {

@@ -42,10 +42,12 @@
     font-style: normal;
     font-weight: bold;
 }
-.maison-text span{
-    color: var(--Terracotta400);
+.maison-text, span{
     font-family: var(--Fraunces);
     font-style: italic;
+}
+span {
+    color: var(--Terracotta400);
 }
 
 .number{
