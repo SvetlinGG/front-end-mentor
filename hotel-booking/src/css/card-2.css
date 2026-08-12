@@ -4,9 +4,9 @@ article{
     position: absolute;
     margin-top: -50vh;
     border:1px solid var(--Neutral400);
-    width: 50vh;
+    width: 45vh;
     height: 50vh;
-    margin-left: 75vh;
+    margin-left: 69vh;
     padding: 1rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
     background-color: var(--Terracotta600);
@@ -23,7 +23,7 @@ article:hover {
     font-size: small;
 }
 .card-sun {
-    margin-left: 21rem;
+    margin-left: 18rem;
     margin-top: -2rem;
 }
 .note {
