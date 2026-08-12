@@ -6,7 +6,7 @@ article{
     border:1px solid var(--Neutral400);
     width: 50vh;
     height: 50vh;
-    margin-left: 80vh;
+    margin-left: 75vh;
     padding: 1rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
     background-color: var(--Terracotta600);
@@ -16,7 +16,7 @@ article{
     transform:rotate(5deg);
 }
 article:hover {
-    transform: translateX(30%);
+    transform: translateX(15%);
 }
 .card {
     color: var(--Sun50);

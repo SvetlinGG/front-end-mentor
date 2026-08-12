@@ -15,15 +15,15 @@ section {
     height: 50vh;
     background-color: var(--Neutral0);
     border-radius: 20px;
-    margin-left: 25vh;
+    margin-left: 20vh;
     font-family: var(--DM-Mono);
     padding: 1rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
-    transform:rotate(-5deg);
+    transform:rotate(-3deg);
 }
 
 section:hover {
-    transform: translateX(-30%);
+    transform: translateX(-15%);
 
 }
 
