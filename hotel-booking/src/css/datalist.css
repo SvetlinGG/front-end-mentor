@@ -1,0 +1,19 @@
+
+datalist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid red;
+    gap: 1vh;
+}
+
+.arrival {
+
+}
+
+.wifi {
+
+}
+
+.break {
+    
+}
