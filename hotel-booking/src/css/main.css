@@ -17,7 +17,7 @@ section {
     border-radius: 20px;
     margin-left: 20vh;
     font-family: var(--DM-Mono);
-    padding: 1rem;
+    padding: 0.7rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
     transform:rotate(-3deg);
 }
@@ -84,7 +84,7 @@ section:hover {
     color: var(--Neutral600);
 }
 .wise {
-    margin-top: -0.5rem;
+    margin-top: -1rem;
     align-items: center;
 }
 .eu {
