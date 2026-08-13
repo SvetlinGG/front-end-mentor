@@ -8,8 +8,8 @@
 .booking {
     display: flex;
     justify-content: space-between;
-    margin-left: 1.8em;
-    margin-top: 0.5em;
+    border: 1px solid red;
+    margin:0.5em 1.8em;
 }
 
 .book {

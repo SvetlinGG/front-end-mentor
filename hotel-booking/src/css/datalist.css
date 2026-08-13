@@ -2,18 +2,17 @@
 datalist {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid red;
-    gap: 1vh;
+    gap: 3vh;
 }
 
 .arrival {
-
+    border: 1px solid red;
 }
 
 .wifi {
-
+    border: 1px solid red;
 }
 
 .break {
-    
+    border: 1px solid red;
 }
