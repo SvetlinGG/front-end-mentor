@@ -4,20 +4,22 @@ body {
 }
 
 .big-sun {
-    margin: 15vh 30vw;
+    display: block;
+    margin: clamp(5vh, 10vh, 15vh) auto;
+    width: clamp(120px, 15vw, 220px);
 }
 
 section {
     position: absolute;
-    margin-top: -50vh;
-    border:1px solid var(--Neutral400);
-    width: 280px;
-    min-height: 380px;
+    margin-top: clamp(-45vh, -40vh, -35vh);
+    border: 1px solid var(--Neutral400);
+    width: clamp(200px, 22vw, 320px);
+    min-height: clamp(300px, 35vh, 420px);
     background-color: var(--Neutral0);
     border-radius: 20px;
-    margin-left: 10vw;
+    margin-left: clamp(2vw, 8vw, 12vw);
     font-family: var(--DM-Mono);
-    padding: 0.7rem;
+    padding: clamp(0.5rem, 1vw, 0.9rem);
     box-shadow: 5px 15px 10px var(--Neutral700);
     transform: rotate(-3deg);
 }
@@ -33,8 +35,7 @@ section:hover {
 }
 .recept-text, .num, .in, .out {
     color: var(--Neutral600);
-    font-size: 0.7rem;
-
+    font-size: clamp(0.6rem, 0.8vw, 0.75rem);
 }
 .your {
     font-style: italic;
@@ -45,25 +46,25 @@ section:hover {
     flex-direction: column;
     align-items: end;
 }
-.date-section{
+.date-section {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid var(--Neutral200);
 }
 .in, .out {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
-} 
+    margin-left: clamp(0.5rem, 2vw, 2rem);
+}
 
 .sat, .wed {
-    font-size: small;
+    font-size: clamp(0.65rem, 0.8vw, 0.8rem);
     margin-top: -1.5rem;
     color: var(--Neutral600);
 }
 .april {
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     font-style: italic;
     font-weight: 900;
     margin-top: -0.3rem;
@@ -72,11 +73,11 @@ section:hover {
     display: flex;
     justify-content: space-between;
     color: var(--Neutral800);
-    font-size: small;
+    font-size: clamp(0.6rem, 0.8vw, 0.8rem);
     border-bottom: 1px solid var(--Neutral600);
 }
 
-.total, .wise{
+.total, .wise {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +88,7 @@ section:hover {
     align-items: center;
 }
 .eu {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
     font-style: italic;
     font-weight: 400;
     color: var(--Neutral900);

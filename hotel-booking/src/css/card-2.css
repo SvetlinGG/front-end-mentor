@@ -1,13 +1,11 @@
-
-
-article{
+article {
     position: absolute;
-    margin-top: -50vh;
-    border:1px solid var(--Neutral400);
-    width: 280px;
-    min-height: 380px;
-    margin-left: 35vw;
-    padding: 1rem;
+    margin-top: clamp(-45vh, -40vh, -35vh);
+    border: 1px solid var(--Neutral400);
+    width: clamp(200px, 22vw, 320px);
+    min-height: clamp(300px, 35vh, 420px);
+    margin-left: clamp(20vw, 30vw, 38vw);
+    padding: clamp(0.6rem, 1vw, 1rem);
     box-shadow: 5px 15px 10px var(--Neutral700);
     background-color: var(--Terracotta600);
     border-radius: 20px;
@@ -19,11 +17,12 @@ article:hover {
 }
 .card {
     color: var(--Sun50);
-    font-size: small;
+    font-size: clamp(0.6rem, 0.8vw, 0.8rem);
 }
 .card-sun {
-    margin-left: 18rem;
+    float: right;
     margin-top: -2rem;
+    width: clamp(1.5rem, 2.5vw, 2.5rem);
 }
 .note {
     color: var(--Sun50);
@@ -31,15 +30,19 @@ article:hover {
 .from {
     color: var(--Sun300);
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
 }
 article h1 {
     font-style: italic;
     margin-top: -0.5rem;
     color: var(--Sun50);
     font-family: var(--Fraunces);
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+.glad {
+    font-size: clamp(0.65rem, 0.8vw, 0.8rem);
 }
 .room {
     color: var(--Sun50);
-    margin-top: 3rem;
+    margin-top: clamp(1rem, 3vh, 3rem);
 }

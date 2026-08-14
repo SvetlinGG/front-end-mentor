@@ -1,19 +1,17 @@
-
 .info-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 2rem;
-    padding-right: 0.7rem;
-    gap: 1rem;
+    padding: 0 clamp(0.8rem, 2vw, 2rem);
+    gap: clamp(0.5rem, 1.5vw, 1.5rem);
 }
 
 .arrival, .wifi, .break {
     background-color: var(--Neutral0);
     box-shadow: 5px 5px 10px var(--Neutral700);
-    padding: 0.8rem;
+    padding: clamp(0.5rem, 0.8vw, 0.8rem);
     border-radius: 20px;
-    margin-top: 10vh;
-    min-height: 200px;
+    margin-top: clamp(5vh, 8vh, 10vh);
+    min-height: clamp(160px, 20vh, 240px);
     font-family: var(--DM-Mono);
 }
 .arrival-item, .wifi-item, .break-item {
@@ -23,8 +21,8 @@
 }
 .key-img, .wifi-img, .break-img {
     background-color: var(--Terracotta600);
-    width: 2.3rem;
-    height: 2.3rem;
+    width: clamp(1.6rem, 2.3vw, 2.3rem);
+    height: clamp(1.6rem, 2.3vw, 2.3rem);
     border-radius: 10px;
 }
 .wifi-img {
@@ -36,6 +34,7 @@
 }
 .arrival h2, .wifi h2, .break h2 {
     margin-top: -0.3rem;
+    font-size: clamp(0.8rem, 1.1vw, 1.1rem);
 }
 .net, .pass {
     display: flex;
@@ -45,14 +44,15 @@
     border: 1px solid var(--Neutral400);
     background-color: var(--Neutral200);
     border-radius: 10px;
-    font-size: smaller;
-    padding: 0.5rem;
+    font-size: clamp(0.55rem, 0.7vw, 0.75rem);
+    padding: clamp(0.3rem, 0.5vw, 0.5rem);
 }
 .net, .pass, .below {
     color: var(--Neutral600);
 }
 .wifi-a, .wifi-b, .wifi-c {
     flex: 1;
+    font-size: clamp(0.6rem, 0.75vw, 0.75rem);
 }
 .wifi-a, .a {
     color: var(--Terracotta600);
@@ -65,9 +65,9 @@
 }
 .arrival-item h4, .wifi-item h4, .break-item h4 {
     font-style: italic;
-    font-size: larger;
+    font-size: clamp(0.9rem, 1.2vw, 1.3rem);
 }
 .ring, .fresh {
-    font-size: small;
+    font-size: clamp(0.6rem, 0.75vw, 0.75rem);
     color: var(--Neutral600);
 }
