@@ -6,8 +6,8 @@ article {
     border: 1px solid var(--Neutral400);
     font-family: var(--DM-Mono);
     /* center anchor at 37%, shift right by small offset so it overlaps receipt */
-    left: calc(37% - 1rem);
-    transform: rotate(7deg);
+    left: calc(50% - 1rem);
+    transform: rotate(5deg);
     z-index: 2;
 }
 article:hover {

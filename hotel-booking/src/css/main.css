@@ -13,7 +13,7 @@ body {
     position: absolute;
     width: clamp(200px, 30vw, 440px);
     top: 30%;
-    left: 37%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
     pointer-events: none;
@@ -36,8 +36,8 @@ section {
     border: 1px solid var(--Neutral400);
     font-family: var(--DM-Mono);
     /* center anchor at 37%, shift left by half card width + small offset */
-    left: calc(37% - var(--card-w) - 1rem);
-    transform: rotate(-7deg);
+    left: calc(47% - var(--card-w) - 1rem);
+    transform: rotate(-5deg);
     z-index: 1;
 }
 section:hover {

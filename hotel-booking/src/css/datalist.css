@@ -19,10 +19,11 @@
 }
 .arrival-item, .wifi-item, .break-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: var(--sp-sm);
     margin-bottom: var(--sp-sm);
 }
+
 .key-img, .wifi-img, .break-img {
     background-color: var(--Terracotta600);
     width: var(--icon-md);
@@ -73,11 +74,11 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-.wifi-a, .a { color: var(--Terracotta600); }
-.wifi-b, .b { color: var(--Blue500); }
-.wifi-c, .c { color: var(--Rose500); }
-
+.wifi-a, .a { color: var(--Terracotta600) !important; }
+.wifi-b, .b { color: var(--Blue500) !important; }
+.wifi-c, .c { color: var(--Rose500) !important; }
 .arrival-item h4, .wifi-item h4, .break-item h4 {
+    margin-left: auto;
     font-style: italic;
     font-size: var(--fs-md);
     color: var(--Neutral400);
