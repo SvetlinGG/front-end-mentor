@@ -21,8 +21,15 @@ datalist {
     align-items: center;
 }
 .key-img, .wifi-img, .break-img {
-    border:1px solid red;
+    background-color: var(--Terracotta600);
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 10px;
+}
+.wifi-img {
+    background-color: var(--Blue500);
+}
+.break-img {
+    background-color: var(--Rose500);
+    color: var(--Neutral0);
 }
