@@ -30,7 +30,8 @@
 .stay:hover, .house:hover, .town:hover, .breakfast:hover, .message:hover {
     background-color: var(--Neutral0);
     color: var(--Neutral900);
-    border-radius: 10px;
+    border-radius: 20px;
+    font-size: var(--fs-sm);
 }
 .stay-img, .house-img, .town-img, .breakfast-img, .message-img {
     width: var(--icon-sm);
