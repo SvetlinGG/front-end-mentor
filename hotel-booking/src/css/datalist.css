@@ -55,3 +55,19 @@ h2 {
     margin-top: -1rem;
     color: var(--Neutral600);
 }
+.wifi-a, .wifi-b, .wifi-c {
+    margin-right: 11rem ;
+}
+.wifi-a, .a {
+    color: var(--Terracotta600);
+}
+.wifi-b, .b {
+    color: var(--Blue500);
+}
+.wifi-c, .c {
+    color: var(--Rose500);
+}
+h4 {
+    font-style: italic;
+    font-size: x-large;
+}
