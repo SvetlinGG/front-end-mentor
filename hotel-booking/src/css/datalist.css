@@ -13,12 +13,13 @@ datalist {
     padding: 0.8rem;
     border-radius: 20px;
     margin-top: 10vh;
-    height: 25vh;
+    height: 27vh;
 }
 .arrival-item, .wifi-item, .break-item {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    font-family: var(--DM-Mono);
 }
 .key-img, .wifi-img, .break-img {
     background-color: var(--Terracotta600);
@@ -32,4 +33,25 @@ datalist {
 .break-img {
     background-color: var(--Rose500);
     color: var(--Neutral0);
+}
+h2 {
+    margin-top: -0.3rem;
+}
+.net, .pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--DM-Mono);
+    border: 1px solid var(--Neutral400);
+    background-color: var(--Neutral200);
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 0.5rem;
+    
+    
+}
+.net, .pass, .below{
+    
+    margin-top: -1rem;
+    color: var(--Neutral600);
 }
