@@ -14,12 +14,13 @@ datalist {
     border-radius: 20px;
     margin-top: 10vh;
     height: 27vh;
+    font-family: var(--DM-Mono);
 }
 .arrival-item, .wifi-item, .break-item {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    font-family: var(--DM-Mono);
+    
 }
 .key-img, .wifi-img, .break-img {
     background-color: var(--Terracotta600);
@@ -51,8 +52,6 @@ h2 {
     
 }
 .net, .pass, .below{
-    
-    margin-top: -1rem;
     color: var(--Neutral600);
 }
 .wifi-a, .wifi-b, .wifi-c {
@@ -69,5 +68,9 @@ h2 {
 }
 h4 {
     font-style: italic;
-    font-size: x-large;
+    font-size: larger;
+}
+.ring, .fresh {
+    font-size: small;
+    color: var(--Neutral600);
 }
