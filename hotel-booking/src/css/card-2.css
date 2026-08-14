@@ -4,19 +4,18 @@ article{
     position: absolute;
     margin-top: -50vh;
     border:1px solid var(--Neutral400);
-    width: 45vh;
-    height: 50vh;
-    margin-left: 69vh;
+    width: 280px;
+    min-height: 380px;
+    margin-left: 35vw;
     padding: 1rem;
     box-shadow: 5px 15px 10px var(--Neutral700);
     background-color: var(--Terracotta600);
     border-radius: 20px;
     font-family: var(--DM-Mono);
-    padding: 1rem;
-    transform:rotate(5deg);
+    transform: rotate(5deg);
 }
 article:hover {
-    transform: translateX(15%);
+    transform: rotate(5deg) translateX(5%);
 }
 .card {
     color: var(--Sun50);
@@ -34,9 +33,11 @@ article:hover {
     font-style: italic;
     font-size: 1.2rem;
 }
-h1 {
+article h1 {
     font-style: italic;
     margin-top: -0.5rem;
+    color: var(--Sun50);
+    font-family: var(--Fraunces);
 }
 .room {
     color: var(--Sun50);

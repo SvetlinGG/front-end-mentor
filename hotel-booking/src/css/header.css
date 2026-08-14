@@ -19,9 +19,10 @@
 }
 
 .lucia {
-    font-family: var(--DM-Mono);
+    font-family: var(--Fraunces);
+    font-style: italic;
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 10px;
 }
 .print {

@@ -1,10 +1,10 @@
 
-datalist {
+.info-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 2rem;
     padding-right: 0.7rem;
-    gap: 3vh;
+    gap: 1rem;
 }
 
 .arrival, .wifi, .break {
@@ -13,14 +13,13 @@ datalist {
     padding: 0.8rem;
     border-radius: 20px;
     margin-top: 10vh;
-    height: 27vh;
+    min-height: 200px;
     font-family: var(--DM-Mono);
 }
 .arrival-item, .wifi-item, .break-item {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    
 }
 .key-img, .wifi-img, .break-img {
     background-color: var(--Terracotta600);
@@ -35,7 +34,7 @@ datalist {
     background-color: var(--Rose500);
     color: var(--Neutral0);
 }
-h2 {
+.arrival h2, .wifi h2, .break h2 {
     margin-top: -0.3rem;
 }
 .net, .pass {
@@ -48,14 +47,12 @@ h2 {
     border-radius: 10px;
     font-size: smaller;
     padding: 0.5rem;
-    
-    
 }
-.net, .pass, .below{
+.net, .pass, .below {
     color: var(--Neutral600);
 }
 .wifi-a, .wifi-b, .wifi-c {
-    margin-right: 11rem ;
+    flex: 1;
 }
 .wifi-a, .a {
     color: var(--Terracotta600);
@@ -66,7 +63,7 @@ h2 {
 .wifi-c, .c {
     color: var(--Rose500);
 }
-h4 {
+.arrival-item h4, .wifi-item h4, .break-item h4 {
     font-style: italic;
     font-size: larger;
 }

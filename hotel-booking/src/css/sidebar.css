@@ -42,11 +42,11 @@
     font-style: normal;
     font-weight: bold;
 }
-.maison-text, span{
+.maison-text {
     font-family: var(--Fraunces);
     font-style: italic;
 }
-span {
+.maison-text span {
     color: var(--Terracotta400);
 }
 
@@ -55,12 +55,15 @@ span {
     gap: 5vw;
 }
 .one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1.2em;
     height: 1.2em;
     background-color: var(--Rose500);
     border-radius: 3em;
     color: var(--Neutral0);
-    content: "one";
+    font-size: 0.7em;
 }
 
 .weather {
