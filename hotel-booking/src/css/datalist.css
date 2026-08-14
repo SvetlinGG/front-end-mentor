@@ -1,40 +1,53 @@
 .info-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--sp-lg);
     padding: 0 var(--sp-lg);
-    gap: var(--sp-md);
+    /* At 1440px: info row top=600, cards-area=662 → overlap = 662-600 = 62px */
+    margin-top: clamp(-80px, -4.3vw, -62px);
+    position: relative;
+    z-index: 3;
 }
 
 .arrival, .wifi, .break {
     background-color: var(--Neutral0);
-    box-shadow: 5px 5px 10px var(--Neutral700);
-    padding: var(--sp-sm);
-    border-radius: 20px;
-    margin-top: clamp(5vh, 8vh, 10vh);
-    min-height: clamp(160px, 20vh, 240px);
+    box-shadow: 4px 4px 16px hsla(32, 20%, 29%, 0.2);
+    padding: var(--sp-md);
+    border-radius: 16px;
     font-family: var(--DM-Mono);
 }
 .arrival-item, .wifi-item, .break-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: var(--sp-sm);
 }
 .key-img, .wifi-img, .break-img {
     background-color: var(--Terracotta600);
     width: var(--icon-md);
     height: var(--icon-md);
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 0.3rem;
+    flex-shrink: 0;
 }
 .wifi-img {
     background-color: var(--Blue500);
 }
 .break-img {
     background-color: var(--Rose500);
-    color: var(--Neutral0);
 }
 .arrival h2, .wifi h2, .break h2 {
-    margin-top: -0.3rem;
-    font-size: var(--fs-md);
+    font-family: var(--Fraunces);
+    font-style: italic;
+    font-weight: 400;
+    font-size: var(--fs-lg);
+    margin: 0 0 0.1rem 0;
+    color: var(--Neutral900);
+}
+.arrival p, .wifi p, .break p {
+    font-size: var(--fs-sm);
+    color: var(--Neutral600);
+    margin: 0.2rem 0;
 }
 .net, .pass {
     display: flex;
@@ -43,31 +56,41 @@
     font-family: var(--DM-Mono);
     border: 1px solid var(--Neutral400);
     background-color: var(--Neutral200);
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: var(--fs-xs);
-    padding: var(--sp-xs);
-}
-.net, .pass, .below {
+    padding: var(--sp-xs) var(--sp-sm);
     color: var(--Neutral600);
+    margin-top: var(--sp-xs);
+}
+.below {
+    color: var(--Neutral600);
+    font-size: var(--fs-sm);
 }
 .wifi-a, .wifi-b, .wifi-c {
     flex: 1;
     font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
-.wifi-a, .a {
-    color: var(--Terracotta600);
-}
-.wifi-b, .b {
-    color: var(--Blue500);
-}
-.wifi-c, .c {
-    color: var(--Rose500);
-}
+.wifi-a, .a { color: var(--Terracotta600); }
+.wifi-b, .b { color: var(--Blue500); }
+.wifi-c, .c { color: var(--Rose500); }
+
 .arrival-item h4, .wifi-item h4, .break-item h4 {
     font-style: italic;
     font-size: var(--fs-md);
+    color: var(--Neutral400);
 }
-.ring, .fresh {
+.ring, .fresh, .terrace {
     font-size: var(--fs-xs);
     color: var(--Neutral600);
+    line-height: 1.5;
+}
+.copy {
+    cursor: pointer;
+    color: var(--Blue500);
+    font-size: var(--fs-xs);
+}
+.copy:hover {
+    text-decoration: underline;
 }

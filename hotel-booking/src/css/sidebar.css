@@ -4,23 +4,28 @@
     min-height: 100vh;
     width: var(--sidebar-w);
     flex-shrink: 0;
+    background-color: var(--Neutral50);
+    padding: var(--sp-sm) 0;
 }
 .maison-soleil {
     display: flex;
+    flex-direction: column;
     align-items: center;
     border-bottom: 1px solid var(--Neutral400);
-    gap: 0.5em;
-    padding: var(--sp-sm);
+    padding: var(--sp-sm) var(--sp-xs);
+    gap: 0.3em;
 }
 .stay, .house, .town, .breakfast, .message {
     display: flex;
-    gap: 0.8em;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
     color: var(--Neutral600);
     font-family: var(--DM-Mono);
-    font-size: var(--fs-base);
+    font-size: var(--fs-xs);
     cursor: pointer;
-    padding: var(--sp-xs) var(--sp-sm);
-    align-items: center;
+    padding: var(--sp-sm) var(--sp-xs);
+    text-align: center;
 }
 .stay:hover, .house:hover, .town:hover, .breakfast:hover, .message:hover {
     background-color: var(--Neutral0);
@@ -32,16 +37,18 @@
     height: var(--icon-sm);
 }
 .sun {
-    width: var(--icon-lg);
-    height: var(--icon-lg);
+    width: var(--icon-md);
+    height: var(--icon-md);
 }
 .maison-text {
     display: flex;
     flex-direction: column;
-    font-size: var(--fs-md);
+    align-items: center;
+    font-size: var(--fs-sm);
     font-family: var(--Fraunces);
     font-style: italic;
     font-weight: bold;
+    line-height: 1.1;
 }
 .maison-text span {
     color: var(--Terracotta400);
@@ -49,48 +56,56 @@
 
 .number {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.3rem;
 }
 .one {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.1em;
+    height: 1.1em;
     background-color: var(--Rose500);
-    border-radius: 3em;
+    border-radius: 50%;
     color: var(--Neutral0);
-    font-size: 0.7em;
+    font-size: 0.65em;
 }
 
 .weather {
     font-family: var(--DM-Mono);
     color: var(--Neutral700);
-    border-radius: 1em;
+    border-radius: 0.75em;
     margin-top: auto;
     background-color: var(--Sun300);
     padding: var(--sp-xs);
+    text-align: center;
+    margin-left: var(--sp-xs);
+    margin-right: var(--sp-xs);
+}
+.sunlight {
+    width: var(--icon-md);
+    height: var(--icon-md);
+    display: block;
+    margin: 0 auto;
 }
 .today, .sunny {
     font-size: var(--fs-xs);
-    margin-left: 0.5em;
+    margin: 0.1em 0;
 }
 .degree {
-    margin-left: 0.5em;
     font-size: var(--fs-xl);
     font-style: italic;
     font-weight: bold;
-}
-.sunlight {
-    width: var(--icon-lg);
-    height: var(--icon-lg);
-    float: right;
+    margin: 0.1em 0;
+    line-height: 1;
 }
 
 .bottom-text {
-    margin-top: 1.7em;
+    margin-top: var(--sp-md);
     color: var(--Neutral600);
     font-family: var(--DM-Mono);
-    font-size: var(--fs-xs);
+    font-size: clamp(0.4rem, 0.5vw, 0.55rem);
     padding: 0 var(--sp-xs);
+    text-align: center;
+    word-break: break-word;
 }

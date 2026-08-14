@@ -1,51 +1,69 @@
 .guest-navigation {
     display: flex;
+    min-height: 100vh;
 }
 .basic-view {
     border-left: 1px solid var(--Neutral400);
-    padding-left: var(--sp-md);
     flex: 1;
+    min-width: 0;
+    padding: var(--sp-md) var(--sp-lg);
 }
 .booking {
     display: flex;
     justify-content: space-between;
-    margin: var(--sp-xs) var(--sp-md);
+    align-items: flex-start;
+    margin-bottom: var(--sp-md);
 }
-
 .book {
     font-family: var(--DM-Mono);
     color: var(--Neutral600);
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
-
 .lucia {
     font-family: var(--Fraunces);
     font-style: italic;
     font-size: var(--fs-2xl);
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 0.2rem;
+    color: var(--Neutral900);
+}
+.lucia span {
+    color: var(--Terracotta400);
 }
 .print {
     display: flex;
     gap: var(--sp-sm);
-    margin-top: 15px;
     align-items: center;
+    padding-top: 0.3rem;
 }
 .btn-print {
-    padding: 0.4em var(--sp-md);
-    border-radius: 15px;
+    padding: 0.45em var(--sp-md);
+    border-radius: 20px;
     cursor: pointer;
     background-color: var(--Neutral50);
     border: 1px solid var(--Neutral400);
-    font-size: var(--fs-base);
+    font-family: var(--DM-Sans);
+    font-size: var(--fs-sm);
+    color: var(--Neutral800);
     white-space: nowrap;
 }
+.btn-print:hover {
+    background-color: var(--Neutral0);
+    border-color: var(--Neutral600);
+}
 .btn-add {
-    padding: 0.4em var(--sp-md);
-    border-radius: 15px;
+    padding: 0.45em var(--sp-md);
+    border-radius: 20px;
     background-color: var(--Neutral900);
     color: var(--Neutral50);
     cursor: pointer;
-    font-size: var(--fs-base);
+    font-family: var(--DM-Sans);
+    font-size: var(--fs-sm);
+    border: none;
     white-space: nowrap;
+}
+.btn-add:hover {
+    background-color: var(--Neutral700);
 }

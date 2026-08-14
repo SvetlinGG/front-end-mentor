@@ -3,93 +3,118 @@ body {
     background-color: var(--Neutral100);
 }
 
-.big-sun {
-    display: block;
-    margin: 5vh auto;
-    width: var(--icon-lg);
+/* Cards area: fixed height so info row can overlap from below */
+.cards-area {
+    position: relative;
+    height: var(--cards-h);
 }
 
+.big-sun {
+    position: absolute;
+    width: clamp(200px, 30vw, 440px);
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Receipt card: left-leaning, rotated -3deg
+   At 1440px: left edge ~300px from page left, sidebar ~70px
+   So from .basic-view left: ~300-70 = 230px → ~20% of main area */
 section {
     position: absolute;
-    margin-top: var(--card-margin-top);
-    border: 1px solid var(--Neutral400);
+    top: clamp(40px, 6vw, 87px);
+    left: clamp(20px, 4vw, 60px);
     width: var(--card-w);
-    min-height: var(--card-h);
     background-color: var(--Neutral0);
-    border-radius: 20px;
-    margin-left: clamp(2vw, 8vw, 12vw);
+    border: 1px solid var(--Neutral400);
+    border-radius: 16px;
     font-family: var(--DM-Mono);
-    padding: var(--sp-sm);
-    box-shadow: 5px 15px 10px var(--Neutral700);
+    padding: var(--sp-md);
+    box-shadow: 4px 12px 24px hsla(32, 20%, 29%, 0.35);
     transform: rotate(-3deg);
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
-
 section:hover {
-    transform: rotate(-3deg) translateX(-5%);
+    transform: rotate(-3deg) translateX(-4%);
 }
 
 .recept {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--Neutral200);
+    padding-bottom: var(--sp-xs);
+    margin-bottom: var(--sp-xs);
 }
-.recept-text, .num, .in, .out {
+.recept-text, .in, .out {
     color: var(--Neutral600);
-    font-size: var(--fs-sm);
-}
-.your {
-    font-style: italic;
-    font-weight: 700;
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 .num {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
+    color: var(--Neutral600);
+    font-size: var(--fs-xs);
+}
+.your {
+    font-style: italic;
+    font-weight: 700;
+    color: var(--Neutral800);
 }
 .date-section {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid var(--Neutral200);
+    padding: var(--sp-xs) 0;
+    margin-bottom: var(--sp-xs);
 }
-.in, .out {
+.check-in, .check-out {
     display: flex;
     flex-direction: column;
-    margin-left: var(--sp-md);
 }
-
 .sat, .wed {
-    font-size: var(--fs-sm);
-    margin-top: -1.5rem;
+    font-size: var(--fs-xs);
     color: var(--Neutral600);
+    margin-top: -0.2rem;
 }
 .april {
     font-size: var(--fs-date);
     font-style: italic;
     font-weight: 900;
-    margin-top: -0.3rem;
+    color: var(--Neutral900);
+    line-height: 1;
+    margin: 0.2rem 0;
 }
 .price {
     display: flex;
     justify-content: space-between;
     color: var(--Neutral800);
-    font-size: var(--fs-sm);
-    border-bottom: 1px solid var(--Neutral600);
+    font-size: var(--fs-xs);
+    border-bottom: 1px solid var(--Neutral400);
+    padding-bottom: var(--sp-xs);
+    margin-bottom: var(--sp-xs);
 }
-
 .total, .wise {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--Neutral600);
+    font-size: var(--fs-xs);
 }
 .wise {
-    margin-top: -1rem;
-    align-items: center;
+    margin-top: var(--sp-xs);
 }
 .eu {
     font-size: var(--fs-lg);
     font-style: italic;
     font-weight: 400;
     color: var(--Neutral900);
+}
+.barcode-item {
+    width: clamp(60px, 6vw, 80px);
 }

@@ -1,7 +1,4 @@
-
- /* Colors
-
- Neutral */
+ /* Colors - Neutral */
 :root {
 --Neutral900: hsl(33, 15%, 15%);
 --Neutral800: hsl(33, 22%, 20%);
@@ -14,25 +11,21 @@
 --Neutral0: hsl(0, 0%, 100%);
 
 /* Sun */
-
 --Sun500: hsl(42, 83%, 58%);
 --Sun300: hsl(44, 84%, 75%);
 --Sun200: hsl(45, 100%, 74%);
 --Sun50: hsl(41, 100%, 93%);
 
 /* Terracotta */
-
 --Terracotta700: hsl(15, 69%, 37%);
 --Terracotta600: hsl(15, 74%, 41%);
 --Terracotta500: hsl(18, 62%, 47%);
 --Terracotta400: hsl(22, 72%, 56%);
 
 /* Blue */
-
 --Blue500: hsl(230, 49%, 56%);
 
 /* Rose */
-
 --Rose500: hsl(340, 48%, 52%);
 
 /* FONTS */
@@ -40,30 +33,40 @@
 --DM-Sans: "DM Sans", sans-serif;
 --DM-Mono: "DM Mono", monospace;
 
-/* FLUID SIZES */
+/* FLUID SIZES
+   min  = 320px viewport (mobile)
+   pref = vw-based (scales with viewport)
+   max  = 1440px design value
+*/
 
 /* Font sizes */
---fs-xs:    clamp(0.55rem, 0.7vw,  0.75rem);
---fs-sm:    clamp(0.65rem, 0.8vw,  0.8rem);
---fs-base:  clamp(0.7rem,  0.9vw,  0.9rem);
---fs-md:    clamp(0.9rem,  1.2vw,  1.2rem);
---fs-lg:    clamp(1rem,    1.5vw,  1.3rem);
---fs-xl:    clamp(1.2rem,  1.8vw,  1.8rem);
---fs-2xl:   clamp(1.4rem,  2.5vw,  2.5rem);
---fs-date:  clamp(1.2rem,  2.5vw,  2rem);
+--fs-xs:   clamp(0.6rem,  0.7vw,  0.75rem);  /* ~10px → 10.8px  */
+--fs-sm:   clamp(0.7rem,  0.85vw, 0.875rem); /* ~11px → 12.2px  */
+--fs-base: clamp(0.75rem, 0.9vw,  0.9rem);   /* ~12px → 13px    */
+--fs-md:   clamp(0.875rem,1.1vw,  1rem);     /* ~14px → 15.8px  */
+--fs-lg:   clamp(1rem,    1.3vw,  1.3rem);   /* ~16px → 18.7px  */
+--fs-xl:   clamp(1.5rem,  2vw,    2rem);     /* ~24px → 28.8px  */
+--fs-2xl:  clamp(1.8rem,  2.8vw,  2.8rem);  /* ~28px → 40px    */
+--fs-date: clamp(1.4rem,  2.2vw,  2.2rem);  /* date numbers    */
 
 /* Spacing */
---sp-xs:    clamp(0.3rem,  0.5vw,  0.5rem);
---sp-sm:    clamp(0.5rem,  0.8vw,  0.8rem);
---sp-md:    clamp(0.8rem,  1.5vw,  1.8rem);
---sp-lg:    clamp(1rem,    2vw,    2rem);
+--sp-xs:  clamp(0.25rem, 0.4vw,  0.5rem);
+--sp-sm:  clamp(0.5rem,  0.7vw,  0.75rem);
+--sp-md:  clamp(0.75rem, 1.2vw,  1.25rem);
+--sp-lg:  clamp(1rem,    1.8vw,  2rem);
+--sp-xl:  clamp(1.5rem,  2.5vw,  2.5rem);
 
 /* Component sizes */
---icon-sm:  clamp(1rem,    1.5vw,  1.5rem);
---icon-md:  clamp(1.6rem,  2.3vw,  2.3rem);
---icon-lg:  clamp(2rem,    3vw,    3rem);
---sidebar-w: clamp(160px,  16vw,   240px);
---card-w:   clamp(200px,   22vw,   320px);
---card-h:   clamp(300px,   35vh,   420px);
---card-margin-top: clamp(-45vh, -40vh, -35vh);
+--icon-sm:   clamp(1rem,   1.4vw, 1.5rem);
+--icon-md:   clamp(1.8rem, 2.2vw, 2.3rem);
+--icon-lg:   clamp(2rem,   2.8vw, 3rem);
+
+/* Sidebar: 70px at 1440 → ~4.9vw, min 60px */
+--sidebar-w: clamp(60px, 4.9vw, 70px);
+
+/* Cards: receipt is ~300px wide at 1440 */
+--card-w:  clamp(220px, 21vw, 300px);
+
+/* Cards area height: 662px at 1440 */
+--cards-h: clamp(420px, 46vw, 662px);
 }

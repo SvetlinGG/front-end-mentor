@@ -1,48 +1,70 @@
+/* Terracotta host note card: right-leaning, rotated +5deg
+   At 1440px: left edge ~836px from page left, sidebar ~70px
+   From .basic-view: ~836-70 = 766px → ~53% of 1440 main area */
 article {
     position: absolute;
-    margin-top: var(--card-margin-top);
-    border: 1px solid var(--Neutral400);
+    top: clamp(60px, 10vw, 145px);
+    left: clamp(35%, 42%, 50%);
     width: var(--card-w);
-    min-height: var(--card-h);
-    margin-left: clamp(20vw, 30vw, 38vw);
-    padding: var(--sp-sm);
-    box-shadow: 5px 15px 10px var(--Neutral700);
+    border: 1px solid var(--Neutral400);
+    border-radius: 16px;
+    padding: var(--sp-md);
+    box-shadow: 4px 12px 24px hsla(32, 20%, 29%, 0.35);
     background-color: var(--Terracotta600);
-    border-radius: 20px;
     font-family: var(--DM-Mono);
     transform: rotate(5deg);
+    z-index: 2;
+    transition: transform 0.3s ease;
 }
 article:hover {
-    transform: rotate(5deg) translateX(5%);
+    transform: rotate(5deg) translateX(4%);
 }
 .card {
     color: var(--Sun50);
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 .card-sun {
     float: right;
-    margin-top: -2rem;
+    margin-top: -1.8rem;
     width: var(--icon-lg);
 }
 .note {
     color: var(--Sun50);
+    clear: both;
 }
 .from {
     color: var(--Sun300);
     font-style: italic;
     font-size: var(--fs-md);
+    margin-bottom: 0;
 }
 article h1 {
-    font-style: italic;
-    margin-top: -0.5rem;
-    color: var(--Sun50);
     font-family: var(--Fraunces);
+    font-style: italic;
+    font-weight: 400;
     font-size: var(--fs-2xl);
+    color: var(--Sun50);
+    margin-top: 0.1rem;
+    margin-bottom: var(--sp-xs);
 }
 .glad {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
+    color: var(--Sun50);
+    line-height: 1.5;
 }
 .room {
     color: var(--Sun50);
     margin-top: var(--sp-lg);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.room h3 {
+    font-family: var(--Fraunces);
+    font-style: italic;
+    font-weight: 400;
+    font-size: var(--fs-lg);
+    margin-top: 0.2rem;
 }
