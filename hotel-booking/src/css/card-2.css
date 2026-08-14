@@ -7,11 +7,11 @@ article {
     font-family: var(--DM-Mono);
     /* center anchor at 37%, shift right by small offset so it overlaps receipt */
     left: calc(37% - 1rem);
-    transform: translateY(-50%) rotate(5deg);
+    transform: rotate(7deg);
     z-index: 2;
 }
 article:hover {
-    transform: translateY(-50%) rotate(5deg) translateX(6%);
+    transform: translateX(50%);
 }
 .card {
     color: var(--Sun50);
@@ -50,7 +50,8 @@ article h1 {
 }
 .room {
     color: var(--Sun50);
-    margin-top: var(--sp-lg);
+    margin-top: 40%;
+    /* margin-top: var(--sp-lg); */
     font-size: var(--fs-xs);
     text-transform: uppercase;
     letter-spacing: 0.05em;

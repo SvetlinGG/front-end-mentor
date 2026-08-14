@@ -4,7 +4,8 @@
     gap: var(--sp-lg);
     padding: 0 var(--sp-lg);
     /* At 1440px: info row top=600, cards-area=662 → overlap = 662-600 = 62px */
-    margin-top: clamp(-80px, -4.3vw, -62px);
+    /* margin-top: clamp(-80px, -4.3vw, -62px); */
+    margin-top: -18%;
     position: relative;
     z-index: 3;
 }

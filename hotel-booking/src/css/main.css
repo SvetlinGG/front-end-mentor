@@ -12,15 +12,14 @@ body {
 .big-sun {
     position: absolute;
     width: clamp(200px, 30vw, 440px);
-    top: 50%;
+    top: 30%;
     left: 37%;
     transform: translate(-50%, -50%);
     z-index: 0;
     pointer-events: none;
 }
 
-/* Both cards share identical size, centered around 37% of main area.
-   Receipt sits left of center, terracotta sits right — they overlap in the middle. */
+
 section, article {
     position: absolute;
     width: var(--card-w);
@@ -28,7 +27,7 @@ section, article {
     border-radius: 16px;
     padding: var(--sp-md);
     box-shadow: 4px 12px 24px hsla(32, 20%, 29%, 0.35);
-    top: 50%;
+    top: -5%;
     transition: transform 0.3s ease;
 }
 
@@ -38,11 +37,11 @@ section {
     font-family: var(--DM-Mono);
     /* center anchor at 37%, shift left by half card width + small offset */
     left: calc(37% - var(--card-w) - 1rem);
-    transform: translateY(-50%) rotate(-3deg);
+    transform: rotate(-7deg);
     z-index: 1;
 }
 section:hover {
-    transform: translateY(-50%) rotate(-3deg) translateX(-6%);
+    transform: translateX(-50%);
 }
 
 .recept {

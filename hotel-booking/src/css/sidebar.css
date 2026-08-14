@@ -9,7 +9,7 @@
 }
 .maison-soleil {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     border-bottom: 1px solid var(--Neutral400);
     padding: var(--sp-sm) var(--sp-xs);
@@ -17,7 +17,7 @@
 }
 .stay, .house, .town, .breakfast, .message {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     gap: 0.3em;
     color: var(--Neutral600);

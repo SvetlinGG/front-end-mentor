@@ -62,11 +62,11 @@
 --icon-lg:   clamp(2rem,   2.8vw, 3rem);
 
 /* Sidebar: 70px at 1440 → ~4.9vw, min 60px */
---sidebar-w: clamp(60px, 4.9vw, 70px);
+--sidebar-w: clamp(150px, 4.9vw, 70px);
 
 /* Cards: ~300px wide, ~450px tall at 1440px */
---card-w:  clamp(200px, 20.8vw, 300px);
---card-h:  clamp(300px, 31.25vw, 450px);
+--card-w:  clamp(330px, 20.8vw, 300px);
+--card-h:  clamp(300px, 31.25vw, 390px);
 
 /* Cards area height: tall enough to contain both offset cards */
 --cards-h: clamp(380px, 46vw, 660px);
