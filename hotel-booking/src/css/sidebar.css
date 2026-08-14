@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: clamp(160px, 16vw, 240px);
+    width: var(--sidebar-w);
     flex-shrink: 0;
 }
 .maison-soleil {
@@ -10,16 +10,16 @@
     align-items: center;
     border-bottom: 1px solid var(--Neutral400);
     gap: 0.5em;
-    padding: clamp(0.4rem, 0.8vw, 0.8rem);
+    padding: var(--sp-sm);
 }
 .stay, .house, .town, .breakfast, .message {
     display: flex;
     gap: 0.8em;
     color: var(--Neutral600);
     font-family: var(--DM-Mono);
-    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+    font-size: var(--fs-base);
     cursor: pointer;
-    padding: clamp(0.3rem, 0.5vw, 0.5rem) clamp(0.4rem, 0.7vw, 0.7rem);
+    padding: var(--sp-xs) var(--sp-sm);
     align-items: center;
 }
 .stay:hover, .house:hover, .town:hover, .breakfast:hover, .message:hover {
@@ -28,17 +28,17 @@
     border-radius: 10px;
 }
 .stay-img, .house-img, .town-img, .breakfast-img, .message-img {
-    width: clamp(1rem, 1.5vw, 1.5rem);
-    height: clamp(1rem, 1.5vw, 1.5rem);
+    width: var(--icon-sm);
+    height: var(--icon-sm);
 }
 .sun {
-    width: clamp(2rem, 3vw, 3rem);
-    height: clamp(2rem, 3vw, 3rem);
+    width: var(--icon-lg);
+    height: var(--icon-lg);
 }
 .maison-text {
     display: flex;
     flex-direction: column;
-    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    font-size: var(--fs-md);
     font-family: var(--Fraunces);
     font-style: italic;
     font-weight: bold;
@@ -69,21 +69,21 @@
     border-radius: 1em;
     margin-top: auto;
     background-color: var(--Sun300);
-    padding: clamp(0.3rem, 0.5vw, 0.5rem);
+    padding: var(--sp-xs);
 }
 .today, .sunny {
-    font-size: clamp(0.6rem, 0.75vw, 0.8rem);
+    font-size: var(--fs-xs);
     margin-left: 0.5em;
 }
 .degree {
     margin-left: 0.5em;
-    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    font-size: var(--fs-xl);
     font-style: italic;
     font-weight: bold;
 }
 .sunlight {
-    width: clamp(2rem, 3vw, 3rem);
-    height: clamp(2rem, 3vw, 3rem);
+    width: var(--icon-lg);
+    height: var(--icon-lg);
     float: right;
 }
 
@@ -91,6 +91,6 @@
     margin-top: 1.7em;
     color: var(--Neutral600);
     font-family: var(--DM-Mono);
-    font-size: clamp(0.55rem, 0.7vw, 0.7rem);
-    padding: 0 0.5rem;
+    font-size: var(--fs-xs);
+    padding: 0 var(--sp-xs);
 }

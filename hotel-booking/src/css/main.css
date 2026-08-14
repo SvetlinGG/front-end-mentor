@@ -5,21 +5,21 @@ body {
 
 .big-sun {
     display: block;
-    margin: clamp(5vh, 10vh, 15vh) auto;
-    width: clamp(120px, 15vw, 220px);
+    margin: 5vh auto;
+    width: var(--icon-lg);
 }
 
 section {
     position: absolute;
-    margin-top: clamp(-45vh, -40vh, -35vh);
+    margin-top: var(--card-margin-top);
     border: 1px solid var(--Neutral400);
-    width: clamp(200px, 22vw, 320px);
-    min-height: clamp(300px, 35vh, 420px);
+    width: var(--card-w);
+    min-height: var(--card-h);
     background-color: var(--Neutral0);
     border-radius: 20px;
     margin-left: clamp(2vw, 8vw, 12vw);
     font-family: var(--DM-Mono);
-    padding: clamp(0.5rem, 1vw, 0.9rem);
+    padding: var(--sp-sm);
     box-shadow: 5px 15px 10px var(--Neutral700);
     transform: rotate(-3deg);
 }
@@ -35,7 +35,7 @@ section:hover {
 }
 .recept-text, .num, .in, .out {
     color: var(--Neutral600);
-    font-size: clamp(0.6rem, 0.8vw, 0.75rem);
+    font-size: var(--fs-sm);
 }
 .your {
     font-style: italic;
@@ -55,16 +55,16 @@ section:hover {
 .in, .out {
     display: flex;
     flex-direction: column;
-    margin-left: clamp(0.5rem, 2vw, 2rem);
+    margin-left: var(--sp-md);
 }
 
 .sat, .wed {
-    font-size: clamp(0.65rem, 0.8vw, 0.8rem);
+    font-size: var(--fs-sm);
     margin-top: -1.5rem;
     color: var(--Neutral600);
 }
 .april {
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-size: var(--fs-date);
     font-style: italic;
     font-weight: 900;
     margin-top: -0.3rem;
@@ -73,7 +73,7 @@ section:hover {
     display: flex;
     justify-content: space-between;
     color: var(--Neutral800);
-    font-size: clamp(0.6rem, 0.8vw, 0.8rem);
+    font-size: var(--fs-sm);
     border-bottom: 1px solid var(--Neutral600);
 }
 
@@ -88,7 +88,7 @@ section:hover {
     align-items: center;
 }
 .eu {
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-size: var(--fs-lg);
     font-style: italic;
     font-weight: 400;
     color: var(--Neutral900);

@@ -3,49 +3,49 @@
 }
 .basic-view {
     border-left: 1px solid var(--Neutral400);
-    padding-left: clamp(0.8rem, 1.5vw, 1.8rem);
+    padding-left: var(--sp-md);
     flex: 1;
 }
 .booking {
     display: flex;
     justify-content: space-between;
-    margin: clamp(0.3rem, 0.5vw, 0.5rem) clamp(0.8rem, 1.8vw, 1.8rem);
+    margin: var(--sp-xs) var(--sp-md);
 }
 
 .book {
     font-family: var(--DM-Mono);
     color: var(--Neutral600);
-    font-size: clamp(0.6rem, 0.8vw, 0.8rem);
+    font-size: var(--fs-sm);
 }
 
 .lucia {
     font-family: var(--Fraunces);
     font-style: italic;
-    font-size: clamp(1.4rem, 2.5vw, 2.5rem);
+    font-size: var(--fs-2xl);
     font-weight: 400;
     margin-top: 10px;
 }
 .print {
     display: flex;
-    gap: clamp(0.5rem, 1vw, 1rem);
+    gap: var(--sp-sm);
     margin-top: 15px;
     align-items: center;
 }
 .btn-print {
-    padding: 0.4em clamp(0.6rem, 1.2vw, 1.2rem);
+    padding: 0.4em var(--sp-md);
     border-radius: 15px;
     cursor: pointer;
     background-color: var(--Neutral50);
     border: 1px solid var(--Neutral400);
-    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+    font-size: var(--fs-base);
     white-space: nowrap;
 }
 .btn-add {
-    padding: 0.4em clamp(0.6rem, 1.2vw, 1.2rem);
+    padding: 0.4em var(--sp-md);
     border-radius: 15px;
     background-color: var(--Neutral900);
     color: var(--Neutral50);
     cursor: pointer;
-    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+    font-size: var(--fs-base);
     white-space: nowrap;
 }
