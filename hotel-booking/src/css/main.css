@@ -3,7 +3,7 @@ body {
     background-color: var(--Neutral100);
 }
 
-/* Cards area: fixed height so info row can overlap from below */
+/* Cards area: fixed height, cards centered inside */
 .cards-area {
     position: relative;
     height: var(--cards-h);
@@ -13,32 +13,36 @@ body {
     position: absolute;
     width: clamp(200px, 30vw, 440px);
     top: 50%;
-    left: 38%;
+    left: 37%;
     transform: translate(-50%, -50%);
     z-index: 0;
     pointer-events: none;
 }
 
-/* Receipt card: left-leaning, rotated -3deg
-   At 1440px: left edge ~300px from page left, sidebar ~70px
-   So from .basic-view left: ~300-70 = 230px → ~20% of main area */
-section {
+/* Both cards share identical size, centered around 37% of main area.
+   Receipt sits left of center, terracotta sits right — they overlap in the middle. */
+section, article {
     position: absolute;
-    top: clamp(40px, 6vw, 87px);
-    left: clamp(20px, 4vw, 60px);
     width: var(--card-w);
-    background-color: var(--Neutral0);
-    border: 1px solid var(--Neutral400);
+    min-height: var(--card-h);
     border-radius: 16px;
-    font-family: var(--DM-Mono);
     padding: var(--sp-md);
     box-shadow: 4px 12px 24px hsla(32, 20%, 29%, 0.35);
-    transform: rotate(-3deg);
-    z-index: 1;
+    top: 50%;
     transition: transform 0.3s ease;
 }
+
+section {
+    background-color: var(--Neutral0);
+    border: 1px solid var(--Neutral400);
+    font-family: var(--DM-Mono);
+    /* center anchor at 37%, shift left by half card width + small offset */
+    left: calc(37% - var(--card-w) - 1rem);
+    transform: translateY(-50%) rotate(-3deg);
+    z-index: 1;
+}
 section:hover {
-    transform: rotate(-3deg) translateX(-4%);
+    transform: translateY(-50%) rotate(-3deg) translateX(-6%);
 }
 
 .recept {

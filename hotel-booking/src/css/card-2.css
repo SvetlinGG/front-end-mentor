@@ -2,22 +2,16 @@
    At 1440px: left edge ~836px from page left, sidebar ~70px
    From .basic-view: ~836-70 = 766px → ~53% of 1440 main area */
 article {
-    position: absolute;
-    top: clamp(60px, 10vw, 145px);
-    left: clamp(35%, 42%, 50%);
-    width: var(--card-w);
-    border: 1px solid var(--Neutral400);
-    border-radius: 16px;
-    padding: var(--sp-md);
-    box-shadow: 4px 12px 24px hsla(32, 20%, 29%, 0.35);
     background-color: var(--Terracotta600);
+    border: 1px solid var(--Neutral400);
     font-family: var(--DM-Mono);
-    transform: rotate(5deg);
+    /* center anchor at 37%, shift right by small offset so it overlaps receipt */
+    left: calc(37% - 1rem);
+    transform: translateY(-50%) rotate(5deg);
     z-index: 2;
-    transition: transform 0.3s ease;
 }
 article:hover {
-    transform: rotate(5deg) translateX(4%);
+    transform: translateY(-50%) rotate(5deg) translateX(6%);
 }
 .card {
     color: var(--Sun50);
