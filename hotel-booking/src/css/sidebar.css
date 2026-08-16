@@ -107,6 +107,5 @@
     font-family: var(--DM-Mono);
     font-size: clamp(0.4rem, 0.5vw, 0.55rem);
     padding: 0 var(--sp-xs);
-    text-align: center;
     word-break: break-word;
 }
