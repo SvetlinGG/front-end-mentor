@@ -11,7 +11,7 @@ function sumTable() {
         
         
     }
-    sum.value = total
+    sum.textContent = total
     console.log(sum.value);
     
 
