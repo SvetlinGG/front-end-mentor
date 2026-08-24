@@ -11,8 +11,5 @@ function sumTable() {
         
         
     }
-    sum.textContent = total
-    console.log(sum.value);
-    
-
-}
+    sum.textContent = total;
+    sum.style.background = 'lightgree
