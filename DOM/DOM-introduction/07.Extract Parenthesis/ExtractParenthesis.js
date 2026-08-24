@@ -1,6 +1,6 @@
 function extract(elementId) {
 
-    let element = document.getElementById(elementId);
+    const element = document.getElementById(elementId);
     let pattern = /\(([^\(\)]+)\)/g;
 
     let matches = element.textContent.matchAll(pattern);

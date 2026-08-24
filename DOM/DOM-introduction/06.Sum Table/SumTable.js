@@ -12,4 +12,8 @@ function sumTable() {
         
     }
     sum.textContent = total;
-    sum.style.background = 'lightgree
+    sum.style.background = 'lightgreen'
+    console.log(sum.value);
+    
+
+}
