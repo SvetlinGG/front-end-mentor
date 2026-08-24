@@ -1,28 +1,26 @@
 function solve() {
   
-  let string = document.getElementById('text').value;
-  let parameter = document.getElementById('naming-convention').value;
+  let word = document.getElementById('text').value;
+  let convert = document.getElementById('naming-convention').value;
   let result = document.getElementById('result');
 
-  string = string.toLowerCase();
+  word = word.toLowerCase();
 
-  if ( parameter == 'Camel Case'){
-    string = string.split(' ')
-                  .map((word, index) => {
-                    if( index > 0){
-                      return word.replace(word[0], word[0].toUpperCase())
-                    }else {
-                      return word;
-                    }
-                  })
-                  .join('');
-  }else if ( parameter == 'Pascal Case'){
-    string = string.split(' ')
-                    .map( word => word.replace(word[0], word[0].toUpperCase()))
-                    .join('');
-                    //console.log(string);
-  }else {
-    string = 'Error!'
+  if ( convert == 'Camel Case'){
+    word = word.split(' ').map((el, index) => {
+      if (index == 0){
+        return el;
+      }else {
+        return el.charAt(0).toUpperCase() + el.slice(1);
+      }
+    })
+  } else if ( convert == 'Pascal Case'){
+    word = word.split(' ').map((el) => {
+      el.charAt(0).toUpperCase() + el.slice(1)
+    })
+  } else {
+    return 'Error';
   }
-  result.textContent = string;
+
+  result = word
 }
