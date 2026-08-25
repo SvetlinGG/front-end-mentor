@@ -16,7 +16,7 @@ function solve() {
     })
   } else if ( convert == 'Pascal Case'){
     word = word.split(' ').map((el) => {
-      el.charAt(0).toUpperCase() + el.slice(1)
+      el.charAt(0).toUpperCase()
     })
   } else {
     return 'Error';
