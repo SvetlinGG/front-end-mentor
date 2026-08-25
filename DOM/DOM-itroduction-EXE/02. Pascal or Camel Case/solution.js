@@ -22,5 +22,5 @@ function solve() {
     return 'Error';
   }
 
-  result = word
+  result.value = word
 }
