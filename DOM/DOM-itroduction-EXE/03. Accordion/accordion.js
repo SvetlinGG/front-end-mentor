@@ -8,7 +8,7 @@ function toggle() {
         text.style.display = 'inline-block';
         button.textContent = 'LESS';
     }else {
-        text.style.display = 'none';
+        text.style.display = 'block';
         button.textContent = 'MORE'
     }
     
