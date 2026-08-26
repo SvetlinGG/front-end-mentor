@@ -1,13 +1,15 @@
 function toggle() {
     
-    let accordion = document.getElementById('accordion');
+    
     let text = document.getElementById('extra');
-    let button = document.getElementsByClassName('button');
+    let button = document.querySelector('.button');
 
-    if (button.value === 'More'){
-        text.style.direction = 'block'
-    }else if (text.style.display === 'block'){
-        text.style.display = 'none'
+    if (button.textContent === 'MORE'){
+        text.style.display = 'inline-block';
+        button.textContent = 'LESS';
+    }else {
+        text.style.display = 'none';
+        button.textContent = 'MORE'
     }
     
 }
