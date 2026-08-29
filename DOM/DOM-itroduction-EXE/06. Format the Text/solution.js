@@ -5,7 +5,18 @@ function solve() {
 
   const result = input.value.split('.').filter(e => e.length > 0);
   
-  console.log(input);
+  for ( let i = 0; i < result.length; i ++){
+    let res = [];
+    for ( let x = 0; x < 3; x ++){
+      if ( !result[i + x ] ){
+        break;
+      }
+      res.push(result[i + x]);
+    }
+    let p = document.createElement('p');
+    p.textContent = res.join('.') + '.';
+    output.appendChild(p);
+  }
   
   
   
