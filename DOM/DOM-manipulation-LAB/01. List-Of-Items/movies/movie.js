@@ -12,3 +12,6 @@ thirdMovie.textContent = 'Harry Potter';
 moviesList.append(firstMovie);
 moviesList.append(secondMovie);
 moviesList.append(thirdMovie);
+
+const aElement = document.createElement('a');
+const createLiElement = document.createElement('li');
