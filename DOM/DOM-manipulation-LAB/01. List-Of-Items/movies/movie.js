@@ -22,3 +22,5 @@ aElement.textContent = 'The Matrix';
 aElement.target = '_blink';
 
 createLiElement.append(aElement);
+
+moviesList.append(createLiElement)
