@@ -21,17 +21,18 @@ function solve() {
 				}
 			}
 			const workersData = workersList.split(', ');
+			const newWorkers = createWorkerList(workersData);
+			result.workers = concatWorkers(result.workers, newWorkers);
 			let sumSalary = 0;
 			let bestSalary = 0;
 			let workerArr = [];
 			for ( let worker of workersData){
-				const [workerName, salary] = worker.split(' ');
+				let [workerName, salary] = worker.split(' ');
 				salary = Number(salary);
-				sumSalary += salary;
-				if(bestSalary < salary){
-					bestSalary = salary;
-				}
-				workerArr.push({name: workerName, salary});
+				
+				
+				result.push(worker);
+
 			}
 			const currentRestaurant = result[restaurantName];
 			currentRestaurant.avgSalary = sumSalary / workerArr.length;
