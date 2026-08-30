@@ -6,6 +6,24 @@ function solve() {
 	const bestRestaurantRef = document.querySelector('#bestRestaurant p');
 	const workersRef = document.querySelector('#workers p');
 
+	function onClick(){
+		const data = textAreaRef.value;
+		const restaurantData = JSON.parse(data);
+		const result = {};
+
+		for (let el of restaurantData){
+			let [restaurantName, workersList] = el.split(' - ');
+			if (!result.hasOwnProperty(restaurantName)){
+				result[restaurantName] = {
+					avgSalary: 0,
+					bestSalary: 0,
+					workers: []
+				}
+			}
+			const workersData = workersList.split(', ')
+		}
+	}
+
 
 
 
