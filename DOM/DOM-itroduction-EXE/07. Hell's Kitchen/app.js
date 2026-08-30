@@ -20,8 +20,27 @@ function solve() {
 					workers: []
 				}
 			}
-			const workersData = workersList.split(', ')
+			const workersData = workersList.split(', ');
+			let sumSalary = 0;
+			let bestSalary = 0;
+			let workerArr = [];
+			for ( let worker of workersData){
+				const [workerName, salary] = worker.split(' ');
+				salary = Number(salary);
+				sumSalary += salary;
+				if(bestSalary < salary){
+					bestSalary = salary;
+				}
+				workerArr.push({name: workerName, salary});
+			}
+			const currentRestaurant = result[restaurantName];
+			currentRestaurant.avgSalary = sumSalary / workerArr.length;
+			currentRestaurant.bestSalary = bestSalary;
 		}
+	}
+
+	function createWorkerList(currentWorkerList, newWorkerList){
+
 	}
 
 
