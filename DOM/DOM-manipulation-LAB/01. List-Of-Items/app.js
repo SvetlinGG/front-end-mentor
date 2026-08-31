@@ -1,10 +1,22 @@
 function addItem() {
     
     const item = document.getElementById('items');
-    const newItem = document.getElementById('newItemText').value;
-    item.innerHTML += `<li>${newItem}</li>`;
-    newItem = 'focus'
+    const newItem = document.getElementById('newItemText');
     
+
+    const newLiElement = document.createElement('li');
+    newLiElement.textContent = newItem.value;
+
+    item.append(newLiElement);
+    
+
+    // clean up value
+    
+    newItem.value = '';
+
+    // focus input
+
+    newItem.focus();
 
 
 }
